@@ -35,7 +35,7 @@
          loginDiv.add(forgetDiv).hide();
          signUpDiv.fadeIn(700);
     }
-   
+
     var LoginModel = function () {
         signUpDiv.add(forgetDiv).hide();
         loginDiv.fadeIn(700);
@@ -67,7 +67,7 @@
       registerModel();
       return false
     });
-    
+
     $('#formloginModal').on("click", function () {
       LoginModel();
       return false
@@ -111,59 +111,6 @@
   });
 
 
-  /*(4) GOOGLE MAPS
-   ========================================================================== */
-  var centerLoc = new google.maps.LatLng(40.702259, -73.937709);
-  var myMapOptions = {
-    zoom: 14,
-    center: centerLoc,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    scrollwheel: false
-  };
-  var theMap = new google.maps.Map(document.getElementById('map'), myMapOptions);
-  var template = $('#template');
-  var theme = template.attr('class');
-
-  if (template.is('.' + theme)) {
-    var iconBase = {
-      url: "images/marker-" + theme + ".svg", // url
-      scaledSize: new google.maps.Size(40, 60)// scaled size
-    };
-  }
-
-  var marker = new google.maps.Marker({
-    position: {lat: 40.700259, lng: -73.937709},
-    map: theMap,
-    icon: iconBase,
-    title: "Sinewave"
-  });
-
-  var boxText = document.createElement('div');
-  boxText.innerHTML = "<b class='pointer-heading'>CURRENT ADDRESS</b><hr style='margin-top:7px; margin-bottom:7px'><span class='map-address'>343, Park Street, Brooklyn, New York, USA - 01445</span>";
-
-  var myOptions = {
-    content: boxText
-    , disableAutoPan: false
-    , maxWidth: 0
-    , pixelOffset: new google.maps.Size(-100, -160)
-    , zIndex: null
-    , boxStyle: {
-      width: "200px"
-
-    }
-    , closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif"
-    , infoBoxClearance: new google.maps.Size(1, 1)
-    , isHidden: false
-    , pane: "floatPane"
-    , enableEventPropagation: false
-  };
-
-  google.maps.event.addListener(marker, "click", function (e) {
-    ib.open(theMap, this);
-  });
-
-  var ib = new InfoBox(myOptions);
-  ib.open(theMap, marker);
 
 
   /*(5) CONTACT FORM
