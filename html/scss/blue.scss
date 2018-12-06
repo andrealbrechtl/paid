@@ -23,7 +23,6 @@
       color: $blue;
     }
   }
-
   &.btn-green-bordered {
     color: $blue;
     border: 2px solid $blue;
@@ -32,14 +31,32 @@
       background: $blue;
     }
   }
+  &.btn-matmatch {
+      cursor: pointer;
+        text-align: center;
+        touch-action: manipulation;
+        white-space: nowrap;
+        background-color: rgb(3, 199, 167);
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(3, 199, 167);
+        border-image: initial;
+        border-radius: 2px;
+      &:hover, &:active {
+          background-color: rgb(3, 199, 167);
+      }
+    
+  }
 }
 
 /* HEADER */
 
 .header-background {
-  background: $blue;
-  background-image: url("../images/bg-line.png"), -moz-linear-gradient(93deg, darken($blue, 5%) 0%, $blue 46%, lighten($blue, 5%));
-  background-image: url("../images/bg-line.png"), -webkit-linear-gradient(93deg, darken($blue, 5%) 0%, $blue 46%, lighten($blue, 5%));
+  background: #526193;
+  background-image: url("../images/bg-line.png"), -moz-linear-gradient(93deg, darken(#526193, 5%) 0%, #526193 46%, lighten(#526193, 5%));
+  background-image: url("../images/bg-line.png"), -webkit-linear-gradient(93deg, darken(#526193, 5%) 0%, #526193 46%, lighten(#526193, 5%));
 
 }
 
@@ -79,7 +96,7 @@
 
 .heading-background {
   .overlay {
-    background-color: $blue;
+    background-color: #526193;
   }
 }
 

@@ -1,0 +1,89 @@
+/* Navigation */
+.navbar-default.top-nav-collapse .navbar-nav > .active > a {
+  color: #24aa65; }
+
+/* Buttons */
+.btn.btn-fill {
+  background: #24aa65;
+  border: 2px solid #24aa65; }
+  .btn.btn-fill:hover, .btn.btn-fill:focus {
+    background: transparent;
+    color: #24aa65; }
+.btn.btn-bordered:hover, .btn.btn-bordered:focus {
+  background: #ffffff;
+  color: #24aa65; }
+
+/* HEADER */
+.header-background {
+  background: #24aa65;
+  background-image: url("../images/bg-line.png"), -moz-linear-gradient(93deg, #19b062 0%, #28ac68 45.923%, #31cb7c 100%);
+  background-image: url("../images/bg-line.png"), -webkit-linear-gradient(93deg, #19b062 0%, #28ac68 45.923%, #31cb7c 100%); }
+
+/* ABOUT SECTION */
+.about-section .icon-bg {
+  color: #30c779;
+  font-size: 22px;
+  background: #ffffff; }
+.about-section .style-line {
+  background: rgba(48, 199, 121, 0.23);
+  background: -webkit-linear-gradient(left, rgba(48, 199, 121, 0.23), #30c779, rgba(68, 68, 68, 0));
+  background: linear-gradient(to right, rgba(48, 199, 121, 0.23), #30c779, rgba(68, 68, 68, 0)); }
+
+/* Features Section */
+.heading-background .overlay {
+  background-color: #3de28d; }
+
+.features .content-section .circle-features {
+  border: 2px solid #24aa65; }
+
+/* Pricing Section */
+.pricing-section .content-section .main-container .green-container.basic-first {
+  background-color: #24aa65; }
+
+/* Compare Pricing Plans Section */
+.compare-pricing-plans .heading {
+  color: #24aa65; }
+.compare-pricing-plans .style-line {
+  background: rgba(48, 199, 121, 0.23);
+  background: -webkit-linear-gradient(left, rgba(48, 199, 121, 0.23), #30c779, rgba(68, 68, 68, 0));
+  background: linear-gradient(to right, rgba(48, 199, 121, 0.23), #30c779, rgba(68, 68, 68, 0)); }
+
+/* Testimonial */
+.testimonials {
+  /* Caraousal */ }
+  .testimonials .container-padding {
+    padding: 100px 0 25px 0; }
+    @media (min-width: 992px) {
+      .testimonials .container-padding {
+        padding: 100px 0 50px 0; } }
+    .testimonials .container-padding .heading {
+      color: #24aa65; }
+    .testimonials .container-padding .style-line {
+      background: rgba(48, 199, 121, 0.23);
+      background: -webkit-linear-gradient(left, rgba(48, 199, 121, 0.23), #30c779, rgba(68, 68, 68, 0));
+      background: linear-gradient(to right, rgba(48, 199, 121, 0.23), #30c779, rgba(68, 68, 68, 0)); }
+  .testimonials .carousel-indicators .active {
+    background-color: #24aa65; }
+  .testimonials .carousel-caption.name {
+    color: #24aa65; }
+
+/* contact */
+.contact-section .contact-info .style {
+  color: #24aa65; }
+.contact-section .contact-info .heading-info {
+  color: #24aa65; }
+.contact-section .contact-info .block-content {
+  width: 30%; }
+
+.btn-primary {
+  background: #24aa65;
+  border: 2px solid #24aa65; }
+  .btn-primary:hover, .btn-primary:focus {
+    background: transparent;
+    color: #24aa65; }
+
+/* Login Form */
+.forget-password:hover, .forget-password:focus, .forget-password:active {
+  color: #24aa65; }
+
+/*# sourceMappingURL=green.css.map */

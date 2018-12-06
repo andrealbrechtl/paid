@@ -201,16 +201,17 @@
   .container-padding {
     padding-bottom: 24px;
     @include mq(sm) {
-      padding-bottom: 45px;
-      padding-top: 45px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    text-align: center;
     }
     .heading-page {
       color: $white;
       font-family: $montserrat;
-      font-weight: 500;
+      font-weight: 300;
       font-size: 42px;
       @include mq(sm) {
-        font-size: 80px;
+      font-size: 80px;    
       }
     }
     .sub-content {
@@ -218,12 +219,12 @@
       font-family: $montserrat;
       font-weight: 300;
       @include mq(sm) {
-        width: 66%;
+        width: 100%;
       }
-      font-size: 16px;
+      font-size: 22px;
       line-height: 1.4;
       letter-spacing: 1px;
-      margin-bottom: 20px;
+      padding: 24px 0;
     }
   }
 
@@ -449,6 +450,39 @@
   }
 }
 
+.heading-background2 {
+  background: #526193;
+  position: relative;
+  padding: 40px 0;
+  background-size: cover;
+  .heading {
+    font-family: $montserrat;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+
+    h2 {
+      font-size: 25px;
+      @include mq(sm) {
+        font-size: 36px;
+      }
+      font-weight: 500;
+      margin-top: 0;
+      letter-spacing: 1px;
+    }
+    .sub-heading {
+      p {
+        font-size: 14px;
+        @include mq(sm) {
+          font-size: 18px;
+        }
+        font-weight: 300;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 .features {
   padding: 55px 0 20px 0;
   @include mq(xs) {
@@ -522,7 +556,7 @@
 .pricing-section {
   margin-top: 50px;
   @include mq(ws) {
-    margin-top: 100px;
+    margin-top: 0px;
   }
   .content-section {
     text-align: center;
@@ -1413,4 +1447,22 @@
 
 #error_contact {
   max-width: 400px;
+}
+
+
+.panel-matmatch {
+    border: none;
+    .panel-heading {
+        padding: 0px;
+        border-bottom: none;
+        background: #526193;
+        margin-top: 0px;
+        .nav-tabs li{
+            width: 50%;
+            a {
+                padding: 36px;
+                font-size: 22px; 
+            }
+        }
+    }
 }
