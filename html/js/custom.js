@@ -105,15 +105,7 @@
 
   /*(3) BACK TO TOP BUTTON
    ========================================================================== */
-  $(window).on('scroll', function () {
-    var backToTop = $('.back-top');
 
-    if (backToTop.offset().top > 800) {
-      backToTop.css('visibility', 'visible');
-    } else {
-      backToTop.css('visibility', 'hidden');
-    }
-  });
 
 
 
