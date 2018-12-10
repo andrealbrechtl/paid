@@ -308,23 +308,69 @@
     }
   }
 
+//sendform
+
+function sendform(form) {
+  var request = $.ajax({
+                    url: "https://workersapp.herokuapp.com/request-form",
+                    type: "POST",
+                    data: form,
+                    dataType: "json"
+                    });
+}
+
+//reset on click
+document.getElementById('btn_sup_free').addEventListener('click', function(e) {
+  $('#request_sent_1').attr('style', "display:none;");
+  $('#contact-form_sup_free').attr('style', "");
+  $('#contact-form_sup_free')[0].reset();
+})
+
+document.getElementById('btn_sup_2').addEventListener('click', function(e) {
+  $('#request_sent_2').attr('style', "display:none;");
+  $('#contact-form_sup_2').attr('style', "");
+  $('#contact-form_sup_2')[0].reset();
+})
+
+document.getElementById('btn_sup_3').addEventListener('click', function(e) {
+  $('#request_sent_3').attr('style', "display:none;");
+  $('#contact-form_sup_3').attr('style', "");
+  $('#contact-form_sup_3')[0].reset();
+})
+/*
+document.getElementById('btn_sup_4').addEventListener('click', function(e) {
+  $('#request_sent_4').attr('style', "display:none;");
+  $('#contact-form_sup_4').attr('style', "");
+  $('#contact-form_sup_4')[0].reset();
+})
+
+document.getElementById('btn_sup_5').addEventListener('click', function(e) {
+  $('#request_sent_5').attr('style', "display:none;");
+  $('#contact-form_sup_5').attr('style', "");
+  $('#contact-form_sup_5')[0].reset();
+})
+*/
+
+
 //pricing buttons
-  document.getElementById('btn_sup_free_s').addEventListener('click', function(e) {
+  $('#contact-form_sup_free').on('submit', function(e) {
+  //document.getElementById('btn_sup_free_s').addEventListener('submit', function(e) {
+      e.preventDefault()
 
       var formData = $('#contact-form_sup_free').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
+      sendform(formData)
       console.log(formData)
       var style = "width:" + $('#body_sup_1').width().toString() + "px;height:" + $('#body_sup_1').height().toString() + "px;"
       console.log($('#request_sent_1'))
       $('#request_sent_1').attr('style', style);
       $('#contact-form_sup_free').attr('style', "display:none;");
 
-      e.preventDefault()
-
 })
-
-document.getElementById('btn_sup_2_s').addEventListener('click', function(e) {
+$('#contact-form_sup_2').on('submit', function(e) {
+//document.getElementById('btn_sup_2_s').addEventListener('click', function(e) {
 
     var formData = $('#contact-form_sup_2').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
+    sendform(formData)
     console.log(formData)
     var style = "width:" + $('#body_sup_2').width().toString() + "px;height:" + $('#body_sup_2').height().toString() + "px;"
     console.log($('#request_sent_2'))
@@ -334,6 +380,58 @@ document.getElementById('btn_sup_2_s').addEventListener('click', function(e) {
     e.preventDefault()
 
 })
+$('#contact-form_sup_3').on('submit', function(e) {
+//document.getElementById('btn_sup_3_s').addEventListener('click', function(e) {
+
+    var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
+    sendform(formData)
+    console.log(formData)
+    var style = "width:" + $('#body_sup_3').width().toString() + "px;height:" + $('#body_sup_3').height().toString() + "px;"
+    console.log($('#request_sent_3'))
+    $('#request_sent_3').attr('style', style);
+    $('#contact-form_sup_3').attr('style', "display:none;");
+
+    e.preventDefault()
+
+})
+
+//Pay buttons
+document.getElementById('btn_sup_2_p').addEventListener('click', function(e) {
+
+    //var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
+    //console.log(formData)
+    var style = "width:" + $('#body_sup_2').width().toString() + "px;height:" + $('#body_sup_2').height().toString() + "px;"
+    console.log($('#request_sent_2_p'))
+    $('#request_sent_2_p').attr('style', style);
+    $('#request_sent_2').attr('style', "display:none;");
+
+    e.preventDefault()
+
+})
+
+document.getElementById('btn_sup_3_p').addEventListener('click', function(e) {
+
+    //var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
+    //console.log(formData)
+    var style = "width:" + $('#body_sup_3').width().toString() + "px;height:" + $('#body_sup_3').height().toString() + "px;"
+    console.log($('#request_sent_3_p'))
+    $('#request_sent_3_p').attr('style', style);
+    $('#request_sent_3').attr('style', "display:none;");
+
+    e.preventDefault()
+
+})
+
+//intercom
+
+  window.intercomSettings = {
+    app_id: "dtn6xl4q"
+  };
+
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/dtn6xl4q';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+
+
+
 
 
 })();
