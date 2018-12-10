@@ -96,7 +96,7 @@
   $(window).on('scroll', function () {
     var navBarFixTop = $('.navbar-fixed-top');
     if ($('.navbar').offset().top > 50) {
-      navBarFixTop.addClass('top-nav-collapse').css('background', '#000000');
+      navBarFixTop.addClass('top-nav-collapse').css('background', '#526193');
     } else {
       navBarFixTop.removeClass('top-nav-collapse').css('background', 'transparent');
     }
@@ -353,10 +353,14 @@ document.getElementById('btn_sup_5').addEventListener('click', function(e) {
 
 
 //pricing buttons
+<<<<<<< HEAD
   $('#contact-form_sup_free').on('submit', function(e) {
   //document.getElementById('btn_sup_free_s').addEventListener('submit', function(e) {
       e.preventDefault()
 
+=======
+  document.getElementById('btn_sup_free_s').addEventListener('click', function(e) {
+>>>>>>> 5c957621e479835ecf6322d66a5cc016e7e1fb72
       var formData = $('#contact-form_sup_free').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
       sendform(formData)
       console.log(formData)
@@ -364,6 +368,10 @@ document.getElementById('btn_sup_5').addEventListener('click', function(e) {
       console.log($('#request_sent_1'))
       $('#request_sent_1').attr('style', style);
       $('#contact-form_sup_free').attr('style', "display:none;");
+<<<<<<< HEAD
+=======
+      e.preventDefault()
+>>>>>>> 5c957621e479835ecf6322d66a5cc016e7e1fb72
 
 })
 $('#contact-form_sup_2').on('submit', function(e) {
@@ -380,6 +388,7 @@ $('#contact-form_sup_2').on('submit', function(e) {
     e.preventDefault()
 
 })
+<<<<<<< HEAD
 $('#contact-form_sup_3').on('submit', function(e) {
 //document.getElementById('btn_sup_3_s').addEventListener('click', function(e) {
 
@@ -431,6 +440,9 @@ document.getElementById('btn_sup_3_p').addEventListener('click', function(e) {
 (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/dtn6xl4q';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
 
 
+=======
+    
+>>>>>>> 5c957621e479835ecf6322d66a5cc016e7e1fb72
 
 
 
