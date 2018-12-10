@@ -120,30 +120,14 @@
   .content-section {
     .main-container {
       .green-container {
-        background-color: $blue;
+        background-color: #8d98bf;
         &.basic-first {
-          background-color: darken($blue, 10%);
+          background-color: darken(#8d98bf, 10%);
 
         }
       }
     }
-    .container-class {
-      .standard-block {
-        background-color: darken($blue, 20%);
-      }
-
-      .compare-text-digit {
-        &.standard-block-2 {
-          background-color: $blue;
-        }
-      }
-      .feature-heading {
-        .name {
-          color: $blue !important;
-        }
-      }
-
-    }
+    
   }
 }
 
@@ -238,6 +222,9 @@
 
 /* FOOTER */
 .footer {
+    background-color: #3a4056;
+    border-top: 1px solid #616678;
+    padding: 24px;
   .heading {
     li {
       &:first-child {
@@ -267,11 +254,6 @@
   }
 }
 
-.footer-bottom {
-  p {
-    color: $blue;
-  }
-}
 
 .btn-primary {
   background: $blue;
@@ -288,3 +270,27 @@
     color: $blue;
   }
 }
+
+.footer-list {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    float: right;
+    li{
+        display: inline-block;
+        float: left;
+        a {
+            display: block;
+                margin-left: 48px;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+
+
+

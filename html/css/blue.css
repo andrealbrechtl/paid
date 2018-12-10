@@ -74,15 +74,9 @@
 
 /* Pricing Section */
 .pricing-section .content-section .main-container .green-container, .pricing-section .compare-pricing-plans + .compare-plans .main-container .green-container {
-  background-color: #33A1DE; }
+  background-color: #8d98bf; }
   .pricing-section .content-section .main-container .green-container.basic-first, .pricing-section .compare-pricing-plans + .compare-plans .main-container .green-container.basic-first {
-    background-color: #1f86bf; }
-.pricing-section .content-section .container-class .standard-block, .pricing-section .compare-pricing-plans + .compare-plans .container-class .standard-block {
-  background-color: #186793; }
-.pricing-section .content-section .container-class .compare-text-digit.standard-block-2, .pricing-section .compare-pricing-plans + .compare-plans .container-class .compare-text-digit.standard-block-2 {
-  background-color: #33A1DE; }
-.pricing-section .content-section .container-class .feature-heading .name, .pricing-section .compare-pricing-plans + .compare-plans .container-class .feature-heading .name {
-  color: #33A1DE !important; }
+    background-color: #6c7aad; }
 
 /* Compare Pricing Plans Section */
 .compare-pricing-plans .icon-bg {
@@ -132,18 +126,19 @@
   color: #2c6083; }
 
 /* FOOTER */
-.footer .heading li:first-child {
-  color: #33A1DE; }
-.footer .heading li .social-icons a:hover, .footer .heading li .social-icons a:focus {
-  border: 2px solid #33A1DE;
-  color: #33A1DE; }
-.footer .recent-post li:first-child {
-  color: #33A1DE; }
-.footer .recent-post li p a {
-  color: #33A1DE; }
-
-.footer-bottom p {
-  color: #33A1DE; }
+.footer {
+  background-color: #3a4056;
+  border-top: 1px solid #616678;
+  padding: 24px; }
+  .footer .heading li:first-child {
+    color: #33A1DE; }
+  .footer .heading li .social-icons a:hover, .footer .heading li .social-icons a:focus {
+    border: 2px solid #33A1DE;
+    color: #33A1DE; }
+  .footer .recent-post li:first-child {
+    color: #33A1DE; }
+  .footer .recent-post li p a {
+    color: #33A1DE; }
 
 .btn-primary {
   background: #33A1DE;
@@ -155,5 +150,21 @@
 /* Login Form */
 .forget-password:hover, .forget-password:focus, .forget-password:active {
   color: #33A1DE; }
+
+.footer-list {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  float: right; }
+  .footer-list li {
+    display: inline-block;
+    float: left; }
+    .footer-list li a {
+      display: block;
+      margin-left: 48px; }
+      .footer-list li a img {
+        width: 30px;
+        height: 30px; }
 
 /*# sourceMappingURL=blue.css.map */

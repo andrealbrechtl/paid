@@ -614,7 +614,7 @@ div.menu li.animate {
   margin-bottom: 0;
   min-height: unset; }
   .navigation-style .header-logo {
-    width: 155px;
+    width: 170px;
     margin: 0 auto; }
     @media (min-width: 768px) {
       .navigation-style .header-logo {
@@ -669,7 +669,7 @@ div.menu li.animate {
       -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
       -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
       transition: background .5s ease-in-out, padding .5s ease-in-out;
-      padding-top: 20px; } }
+      padding: 29px 57px; } }
   .container-style:after {
     content: '';
     height: 1px;
@@ -1061,7 +1061,7 @@ div.menu li.animate {
       margin-top: 0px; } }
   .pricing-section .content-section, .pricing-section .compare-pricing-plans + .compare-plans {
     text-align: center;
-    padding: 10px 0 10px 0;
+    padding: 0 0 10px 0;
     background-color: #ffffff; }
     .pricing-section .content-section .main-container, .pricing-section .compare-pricing-plans + .compare-plans .main-container {
       width: 100%;
@@ -1073,7 +1073,7 @@ div.menu li.animate {
       @media (min-width: 992px) {
         .pricing-section .content-section .main-container, .pricing-section .compare-pricing-plans + .compare-plans .main-container {
           width: 25%;
-          float: left; } }
+          margin: calc(25%/6); } }
       .pricing-section .content-section .main-container .green-container, .pricing-section .compare-pricing-plans + .compare-plans .main-container .green-container {
         background-color: #2bbf71;
         padding: 0 0 25px 0;
@@ -1083,7 +1083,7 @@ div.menu li.animate {
         .pricing-section .content-section .main-container .green-container.basic-first, .pricing-section .compare-pricing-plans + .compare-plans .main-container .green-container.basic-first {
           background-color: #24aa65; }
         .pricing-section .content-section .main-container .green-container.professional-first, .pricing-section .compare-pricing-plans + .compare-plans .main-container .green-container.professional-first {
-          background-color: #444444; }
+          background-color: #526193; }
         .pricing-section .content-section .main-container .green-container.enterprise-first, .pricing-section .compare-pricing-plans + .compare-plans .main-container .green-container.enterprise-first {
           background-color: #373737; }
         .pricing-section .content-section .main-container .green-container .container-1, .pricing-section .compare-pricing-plans + .compare-plans .main-container .green-container .container-1 {
@@ -1423,7 +1423,7 @@ div.menu li.animate {
 
 /* contact */
 .contact-section {
-  background-color: #373737;
+  background-color: #526193;
   padding: 20px 0 78px 0; }
   .contact-section .icon-bg {
     background: #373737 !important;
@@ -1438,6 +1438,13 @@ div.menu li.animate {
     text-align: center;
     padding: 30px 0 60px 0;
     text-transform: uppercase; }
+  .contact-section .sub-heading p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .contact-section .sub-heading p {
+        font-size: 18px; } }
   .contact-section .reset-mobile {
     text-align: center;
     margin-bottom: 40px; }
@@ -1455,7 +1462,7 @@ div.menu li.animate {
     background: linear-gradient(to right, rgba(48, 199, 121, 0), #ffffff, rgba(68, 68, 68, 0));
     display: block; }
   .contact-section .contact-info {
-    background-color: #212121;
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 25px 0 5px 0; }
     @media (min-width: 768px) {
       .contact-section .contact-info {
@@ -1655,18 +1662,21 @@ div.menu li.animate {
         clear: none; } }
 
 .footer-bottom {
-  background-color: #000;
-  padding: 15px;
-  text-align: center; }
+  background-color: #3a4056;
+  border-top: 1px solid #616678;
+  padding: 24px !important;
+  padding: 15px; }
   .footer-bottom p {
     margin-bottom: 0;
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #24aa65; }
-    .footer-bottom p .designed {
-      color: #ffffff;
-      font-size: 14px; }
+    font-size: 12px;
+    color: #c4ccd7; }
+    .footer-bottom p span {
+      color: #03c7a7; }
+    .footer-bottom p:first-child {
+      float: left; }
+    .footer-bottom p:last-child {
+      float: right; }
 
 .back-top {
   visibility: hidden;
@@ -1764,6 +1774,11 @@ div.menu li.animate {
 #error_contact {
   max-width: 400px; }
 
+.panel-matmatch-plans {
+  padding: 80px 0;
+  width: 100%;
+  text-align: center; }
+
 .panel-matmatch {
   border: none; }
   .panel-matmatch .panel-heading {
@@ -1774,8 +1789,18 @@ div.menu li.animate {
     .panel-matmatch .panel-heading .nav-tabs li {
       width: 50%; }
       .panel-matmatch .panel-heading .nav-tabs li a {
-        padding: 36px;
-        font-size: 22px; }
+        padding: 30px;
+        font-size: 22px;
+        border: none; }
+        .panel-matmatch .panel-heading .nav-tabs li a:hover {
+          text-decoration: none;
+          background-color: none !important;
+          color: white;
+          border: none; }
+
+a {
+  color: white;
+  text-decoration: none; }
 
 /* General Reset Start*/
 html, body {

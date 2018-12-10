@@ -96,7 +96,7 @@
   $(window).on('scroll', function () {
     var navBarFixTop = $('.navbar-fixed-top');
     if ($('.navbar').offset().top > 50) {
-      navBarFixTop.addClass('top-nav-collapse').css('background', '#000000');
+      navBarFixTop.addClass('top-nav-collapse').css('background', '#526193');
     } else {
       navBarFixTop.removeClass('top-nav-collapse').css('background', 'transparent');
     }
@@ -310,14 +310,12 @@
 
 //pricing buttons
   document.getElementById('btn_sup_free_s').addEventListener('click', function(e) {
-
       var formData = $('#contact-form_sup_free').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
       console.log(formData)
       var style = "width:" + $('#body_sup_1').width().toString() + "px;height:" + $('#body_sup_1').height().toString() + "px;"
       console.log($('#request_sent_1'))
       $('#request_sent_1').attr('style', style);
       $('#contact-form_sup_free').attr('style', "display:none;");
-
       e.preventDefault()
 
 })
@@ -334,6 +332,8 @@ document.getElementById('btn_sup_2_s').addEventListener('click', function(e) {
     e.preventDefault()
 
 })
+    
+
 
 
 })();
