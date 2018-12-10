@@ -96,7 +96,7 @@
   $(window).on('scroll', function () {
     var navBarFixTop = $('.navbar-fixed-top');
     if ($('.navbar').offset().top > 50) {
-      navBarFixTop.addClass('top-nav-collapse').css('background', '#526193');
+      navBarFixTop.addClass('top-nav-collapse').css('background', '#000000');
     } else {
       navBarFixTop.removeClass('top-nav-collapse').css('background', 'transparent');
     }

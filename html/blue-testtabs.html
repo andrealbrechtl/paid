@@ -234,7 +234,7 @@
                           <li><span class="text-important">1 </span>domain
                           </li>
                         </ul>
-                        <a class="btn-green-bordered btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan1_sup" id="btn_mat_free"><span>SIGN UP</span></a>
+                        <a class="btn-green-bordered btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan1_sup" id="btn_sup_free"><span>SIGN UP</span></a>
                       </div>
                     </div>
                     <div class="wow fadeInDown main-container" data-wow-duration="1s">
@@ -257,7 +257,7 @@
                           <li><span class="text-important">5 </span>domain
                           </li>
                         </ul>
-                        <a class="btn-green-bordered btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan2_sup" id="btn_mat_free"><span>SIGN UP</span></a>
+                        <a class="btn-green-bordered btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan2_sup" id="btn_sup_2"><span>SIGN UP</span></a>
                       </div>
                     </div>
                     <div class="wow fadeInUp main-container" data-wow-duration="1s">
@@ -280,7 +280,7 @@
                           <li><span class="text-important">10 </span>domain
                           </li>
                         </ul>
-                        <a class="btn-black-bordered btn-md btn" href="#"><span>SIGN UP</span></a>
+                        <a class="btn-black-bordered btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan3_sup" id="btn_sup_3"><span>SIGN UP</span></a>
                       </div>
                     </div>
                     <div class="wow fadeInRight main-container" data-wow-duration="1s">
@@ -525,7 +525,7 @@
 
           <div class="popup-body" id="body_sup_1" >
 
-            <form id="contact-form_sup_free" method="post" action="contact.php" role="form">
+            <form id="contact-form_sup_free" role="form">
 
                 <div class="messages"></div>
 
@@ -667,7 +667,40 @@
             </form>
 
             <div id="request_sent_2" style= "display:none;">
-              Thank you for sending the request 2
+                <div class="row">
+                  <div class="col-md-12">
+                      Thank you for sending the request 2
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                      You selected the plan X
+                  </div>
+                </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Pay $20" id="btn_sup_2_p" >
+                </div>
+            </div>
+
+            </div>
+
+            <div id="request_sent_2_p" style= "display:none;">
+                <div class="row">
+                  <div class="col-md-12">
+                      Awesome you have been selected and got it for free
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                      Wait for our response
+                  </div>
+                </div>
+
+            </div>
 
             </div>
           </div>
@@ -676,6 +709,319 @@
     </div>
 
 
+
+    <!-- Modal plan3 sup -->
+    <div class="modal fade" id="modal_plan3_sup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog form" role="document">
+        <div class="modal-content" >
+
+
+          <div class="popup-body" id="body_sup_3" >
+
+            <form id="contact-form_sup_3" method="post" action="contact.php" role="form">
+
+                <div class="messages"></div>
+
+                <div class="controls">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Name *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_email">Email *</label>
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_company">Company *</label>
+                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_need">Please specify your request *</label>
+                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                    <option value=""></option>
+                                    <option value="Request quotation">Request quotation</option>
+                                    <option value="Request order status">Request order status</option>
+                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_3_s" >
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+            <div id="request_sent_3" style= "display:none;">
+                <div class="row">
+                  <div class="col-md-12">
+                      Thank you for sending the request 3
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                      You selected the plan X
+                  </div>
+                </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Pay $20" id="btn_sup_3_p" >
+                </div>
+            </div>
+
+            </div>
+
+            <div id="request_sent_3_p" style= "display:none;">
+                <div class="row">
+                  <div class="col-md-12">
+                      Awesome you have been selected and got it for free
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                      Wait for our response
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal plan4 mat -->
+    <div class="modal fade" id="modal_plan4_sup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog form" role="document">
+        <div class="modal-content" >
+
+
+          <div class="popup-body" id="body_sup_4" >
+
+            <form id="contact-form_sup_4" method="post" action="contact.php" role="form">
+
+                <div class="messages"></div>
+
+                <div class="controls">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Name *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_email">Email *</label>
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_company">Company *</label>
+                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_need">Please specify your request *</label>
+                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                    <option value=""></option>
+                                    <option value="Request quotation">Request quotation</option>
+                                    <option value="Request order status">Request order status</option>
+                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_4_s" >
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+            <div id="request_sent_4" style= "display:none;">
+                <div class="row">
+                  <div class="col-md-12">
+                      Thank you for sending the request 4
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                      You selected the plan X
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Modal plan5 mat -->
+    <div class="modal fade" id="modal_plan5_sup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog form" role="document">
+        <div class="modal-content" >
+
+
+          <div class="popup-body" id="body_sup_5" >
+
+            <form id="contact-form_sup_5" method="post" action="contact.php" role="form">
+
+                <div class="messages"></div>
+
+                <div class="controls">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Name *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_email">Email *</label>
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_company">Company *</label>
+                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_need">Please specify your request *</label>
+                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                    <option value=""></option>
+                                    <option value="Request quotation">Request quotation</option>
+                                    <option value="Request order status">Request order status</option>
+                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_5_s" >
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+            <div id="request_sent_5" style= "display:none;">
+                <div class="row">
+                  <div class="col-md-12">
+                      Thank you for sending the request 5
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                      You selected the plan X
+                  </div>
+                </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Pay $20" id="btn_sup_5_p" >
+                </div>
+            </div>
+
+            </div>
+
+            <div id="request_sent_5_p" style= "display:none;">
+                <div class="row">
+                  <div class="col-md-12">
+                      Awesome you have been selected and got it for free
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                      Wait for our response
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
