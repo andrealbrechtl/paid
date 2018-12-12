@@ -283,7 +283,29 @@
                         <a class="btn-black-bordered btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan3_sup" id="btn_sup_3"><span>SIGN UP</span></a>
                       </div>
                     </div>
-
+                    <div class="wow fadeInRight main-container" data-wow-duration="1s">
+                      <div class="enterprise-first green-container">
+                        <div class="enterprise-container-2 container-1 text-center">
+                          <h1 class="heading">ENTERPRISE</h1>
+                        </div>
+                        <h2 class="text-digit">$50<span class="month">per month</span></h2>
+                      </div>
+                      <div class="enterprise gray-content-container">
+                        <ul class="content-pricing">
+                          <li><span class="text-important">100 GB </span>Disk Space
+                          </li>
+                          <li><span class="text-important">Unlimited </span>Email Accounts
+                          </li>
+                          <li><span class="text-important">Unlimited </span>Monthly Bandwidth
+                          </li>
+                          <li><span class="text-important">Unlimited </span>Subdomains
+                          </li>
+                          <li><span class="text-important">15 </span>domain
+                          </li>
+                        </ul>
+                        <a class="btn-black-bordered btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan4_sup" id="btn_sup_4" ><span>SIGN UP</span></a>
+                      </div>
+                    </div>
 
 
                   </div>
@@ -310,7 +332,7 @@
                           <li><span class="text-important">15 </span>domain
                           </li>
                         </ul>
-                        <a class="btn-black-bordered btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan4_sup" id="btn_sup_4"><span>SIGN UP</span></a>
+                        <a class="btn-black-bordered btn-md btn" href="#"><span>SIGN UP</span></a>
                       </div>
                     </div>
 
@@ -503,67 +525,90 @@
 
           <div class="popup-body" id="body_sup_1" >
 
-            <form id="contact-form_sup_free" role="form">
+            <form id="contact-form_sup_free" role="form" style="">
+              <input  type="hidden" name="plan" value="free-supplier" >
 
-                <div class="messages"></div>
 
-                <div class="controls">
+                            <div class="messages"></div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_name">Name *</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
+                            <div class="controls">
+                <div class="row">
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                          <label for="form_email">Email *</label>
+                                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Name *</label>
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_jobtitle">Job title *</label>
+                                          <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_company">Organization *</label>
+                                          <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_need">Please specify your request *</label>
+                                            <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                <option value=""></option>
+                                                <option value="Request quotation">Request quotation</option>
+                                                <option value="Request order status">Request order status</option>
+                                                <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                					<div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div><div class="col-md-12">
+                                        <div class="form-group">
+
+                                            <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
+                zoom: 1.5;
+            "> I have read and agreed to the Matmatch Terms and Conditions and Privacy Policy.<br>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_free_s">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_email">Email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
 
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_company">Company *</label>
-                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_need">Please specify your request *</label>
-                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                    <option value=""></option>
-                                    <option value="Request quotation">Request quotation</option>
-                                    <option value="Request order status">Request order status</option>
-                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_free_s" >
-                        </div>
-                    </div>
-                </div>
-
-            </form>
+                        </form>
 
             <div id="request_sent_1" style= "display:none;">
               Thank you for sending the request
@@ -582,67 +627,89 @@
 
           <div class="popup-body" id="body_sup_2" >
 
-            <form id="contact-form_sup_2" method="post" action="contact.php" role="form">
+              <form id="contact-form_sup_2" role="form" style="">
+                <input  type="hidden" name="plan" value="standard-supplier" >
 
-                <div class="messages"></div>
+                              <div class="messages"></div>
 
-                <div class="controls">
+                              <div class="controls">
+                  <div class="row">
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_name">Name *</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_email">Email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
+                                      <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_email">Email *</label>
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
 
 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_company">Company *</label>
-                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_need">Please specify your request *</label>
-                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                    <option value=""></option>
-                                    <option value="Request quotation">Request quotation</option>
-                                    <option value="Request order status">Request order status</option>
-                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_2_s" >
-                        </div>
-                    </div>
-                </div>
+                                      </div>
+                                  </div>
 
-            </form>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="form_name">Name *</label>
+                                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_jobtitle">Job title *</label>
+                                            <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_company">Organization *</label>
+                                            <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="form_need">Please specify your request *</label>
+                                              <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                  <option value=""></option>
+                                                  <option value="Request quotation">Request quotation</option>
+                                                  <option value="Request order status">Request order status</option>
+                                                  <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                                  <option value="Other">Other</option>
+                                              </select>
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+
+                  					<div class="col-md-12">
+                                          <div class="form-group">
+                                              <label for="form_message">Message *</label>
+                                              <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div><div class="col-md-12">
+                                          <div class="form-group">
+
+                                              <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
+                  zoom: 1.5;
+              "> I have read and agreed to the Matmatch Terms and Conditions and Privacy Policy.<br>
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-12">
+                                          <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_2_s">
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </form>
 
             <div id="request_sent_2" style= "display:none;">
                 <div class="row">
@@ -696,67 +763,89 @@
 
           <div class="popup-body" id="body_sup_3" >
 
-            <form id="contact-form_sup_3" method="post" action="contact.php" role="form">
+            <form id="contact-form_sup_3" role="form" style="">
+              <input  type="hidden" name="plan" value="customized-supplier" >
 
-                <div class="messages"></div>
+                            <div class="messages"></div>
 
-                <div class="controls">
+                            <div class="controls">
+                <div class="row">
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_name">Name *</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                          <label for="form_email">Email *</label>
+                                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Name *</label>
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_jobtitle">Job title *</label>
+                                          <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_company">Organization *</label>
+                                          <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_need">Please specify your request *</label>
+                                            <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                <option value=""></option>
+                                                <option value="Request quotation">Request quotation</option>
+                                                <option value="Request order status">Request order status</option>
+                                                <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                					<div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div><div class="col-md-12">
+                                        <div class="form-group">
+
+                                            <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
+                zoom: 1.5;
+            "> I have read and agreed to the Matmatch Terms and Conditions and Privacy Policy.<br>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_3_s">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_email">Email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
 
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_company">Company *</label>
-                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_need">Please specify your request *</label>
-                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                    <option value=""></option>
-                                    <option value="Request quotation">Request quotation</option>
-                                    <option value="Request order status">Request order status</option>
-                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_3_s" >
-                        </div>
-                    </div>
-                </div>
-
-            </form>
+                        </form>
 
             <div id="request_sent_3" style= "display:none;">
                 <div class="row">
@@ -808,66 +897,89 @@
           <div class="popup-body" id="body_sup_4" >
 
             <form id="contact-form_sup_4" method="post" action="contact.php" role="form">
+              <form id="contact-form_sup_4" role="form" style="">
+                <input  type="hidden" name="plan" value="free-material" >
 
-                <div class="messages"></div>
+                              <div class="messages"></div>
 
-                <div class="controls">
+                              <div class="controls">
+                  <div class="row">
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_name">Name *</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_email">Email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
+                                      <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_email">Email *</label>
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
 
 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_company">Company *</label>
-                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_need">Please specify your request *</label>
-                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                    <option value=""></option>
-                                    <option value="Request quotation">Request quotation</option>
-                                    <option value="Request order status">Request order status</option>
-                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_4_s" >
-                        </div>
-                    </div>
-                </div>
+                                      </div>
+                                  </div>
 
-            </form>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="form_name">Name *</label>
+                                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_jobtitle">Job title *</label>
+                                            <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_company">Organization *</label>
+                                            <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="form_need">Please specify your request *</label>
+                                              <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                  <option value=""></option>
+                                                  <option value="Request quotation">Request quotation</option>
+                                                  <option value="Request order status">Request order status</option>
+                                                  <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                                  <option value="Other">Other</option>
+                                              </select>
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+
+                  					<div class="col-md-12">
+                                          <div class="form-group">
+                                              <label for="form_message">Message *</label>
+                                              <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div><div class="col-md-12">
+                                          <div class="form-group">
+
+                                              <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
+                  zoom: 1.5;
+              "> I have read and agreed to the Matmatch Terms and Conditions and Privacy Policy.<br>
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-12">
+                                          <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_4_s">
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </form>
 
             <div id="request_sent_4" style= "display:none;">
                 <div class="row">
@@ -898,12 +1010,24 @@
 
 
           <div class="popup-body" id="body_sup_5" >
-
-            <form id="contact-form_sup_5" method="post" action="contact.php" role="form">
+              <form id="contact-form_sup_5" role="form" style="">
+                <input  type="hidden" name="plan" value="customized-material" >
 
                 <div class="messages"></div>
 
                 <div class="controls">
+    <div class="row">
+
+                        <div class="col-md-12">
+                          <div class="form-group">
+                              <label for="form_email">Email *</label>
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+
+
+                        </div>
+                    </div>
 
                     <div class="row">
                         <div class="col-md-6">
@@ -915,8 +1039,8 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                              <label for="form_email">Email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <label for="form_jobtitle">Job title *</label>
+                              <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
                               <div class="help-block with-errors"></div>
                           </div>
 
@@ -926,8 +1050,8 @@
                     <div class="row">
                         <div class="col-md-6">
                           <div class="form-group">
-                              <label for="form_company">Company *</label>
-                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
+                              <label for="form_company">Organization *</label>
+                              <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
                               <div class="help-block with-errors"></div>
                           </div>
                         </div>
@@ -946,15 +1070,24 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+
+    					<div class="col-md-12">
                             <div class="form-group">
                                 <label for="form_message">Message *</label>
                                 <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
+                        </div><div class="col-md-12">
+                            <div class="form-group">
+
+                                <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
+    zoom: 1.5;
+"> I have read and agreed to the Matmatch Terms and Conditions and Privacy Policy.<br>
+                                <div class="help-block with-errors"></div>
+                            </div>
                         </div>
                         <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_5_s" >
+                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_5_s">
                         </div>
                     </div>
                 </div>
