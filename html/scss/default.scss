@@ -495,23 +495,30 @@
     padding: 75px 0 55px 0;
   }
   .circle-features {
+    margin-bottom: 12px;
     font-size: 18px;
     width: 34px;
     height: 34px;
     border-radius: 50%;
     border: 2px solid $base-color;
     color: $base-color;
-    float: left;
     text-align: center;
-    margin-right: 10px;
     line-height: 1.6;
+      left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
   }
   .heading {
+      text-align: center;
     h3 {
       font-family: $montserrat;
       color: $black-shed-2;
       font-size: 18px;
       line-height: 2;
+      clear:both;
+      content:" ";
+      display:block;
       @include mq(sm) {
         font-size: 15px;
         line-height: 2;
