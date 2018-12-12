@@ -1038,6 +1038,7 @@ div.menu li.animate {
     width: 90%;
     padding: 5px 0 40px 0; }
     .features .content p {
+      text-align: center;
       font-family: "Open Sans", sans-serif;
       color: #7f7e7e;
       font-weight: 500;
@@ -1795,8 +1796,16 @@ div.menu li.animate {
         .panel-matmatch .panel-heading .nav-tabs li a:hover {
           text-decoration: none;
           background-color: none !important;
-          color: white;
           border: none; }
+    .panel-matmatch .panel-heading .nav-tabs li.active a {
+      padding: 30px;
+      font-size: 22px;
+      border: none; }
+      .panel-matmatch .panel-heading .nav-tabs li.active a:hover {
+        text-decoration: none;
+        background-color: none !important;
+        border: none;
+        color: #555; }
 
 a {
   color: white;

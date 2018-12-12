@@ -506,7 +506,6 @@
     margin-right: 10px;
     line-height: 1.6;
   }
-
   .heading {
     h3 {
       font-family: $montserrat;
@@ -529,6 +528,7 @@
     width: 90%;
     padding: 5px 0 40px 0;
     p {
+      text-align: center;
       font-family: $open-sans;
       color: $black-shed-3;
       font-weight: 500;
@@ -1478,7 +1478,7 @@
         border-bottom: none;
         background: #526193;
         margin-top: 0px;
-        .nav-tabs li{
+        .nav-tabs li {
             width: 50%;
             a {
                 padding: 30px;
@@ -1487,8 +1487,20 @@
                 &:hover {
                     text-decoration: none;
                     background-color: none !important;
-                    color: white;
                     border: none;
+                }   
+            }     
+        }
+        .nav-tabs li.active{
+            a {
+                padding: 30px;
+                font-size: 22px;
+                border: none;
+                &:hover {
+                    text-decoration: none;
+                    background-color: none !important;
+                    border: none;
+                    color: #555;
                 }   
             }     
         }
