@@ -197,6 +197,7 @@
   padding: 0 0 32px;
   .header {
     padding-top: 100px;
+      text-align: center;
   }
   .container-padding {
     padding-bottom: 24px;
@@ -227,7 +228,6 @@
       padding: 24px 0;
     }
   }
-
 }
 
 .header-slider.carousel-indicators {
@@ -532,7 +532,6 @@
     }
   }
   .content {
-    width: 90%;
     padding: 5px 0 40px 0;
     p {
       text-align: center;
@@ -561,7 +560,7 @@
 
 /* Pricing Section */
 .pricing-section {
-  margin-top: 50px;
+  margin-top: 0px;
   @include mq(ws) {
     margin-top: 0px;
   }
