@@ -363,6 +363,7 @@ document.getElementById('btn_sup_5').addEventListener('click', function(e) {
       e.preventDefault()
 
       var formData = $('#contact-form_sup_free').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
+      formData["previous_url"] = document.referrer
       sendform(formData)
 
       console.log(formData)
