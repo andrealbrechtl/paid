@@ -183,7 +183,7 @@
               </div>
           </div>
         <div class="container">
-          <div class="panel-body panel-matmatch-plans">
+          <div class="panel-body">
               <div class="tab-content">
                   <div class="tab-pane fade in active" id="tab1default">
 
@@ -263,7 +263,7 @@
 
 
                   </div>
-                  <div class="tab-pane fade" id="tab2default">
+                  <div class="tab-pane fade" id="tab2default" style="display:-webkit-flex;justify-content:center">
 
 
                     <div class="main-container" data-wow-duration="1s">
@@ -387,7 +387,7 @@
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/classie.js"></script>
 
-    
+
 
     <!-- Modal plan1 sup -->
     <div class="modal fade" id="modal_plan1_sup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -412,6 +412,12 @@
                                   <div class="help-block with-errors"></div>
                               </div>
 
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                          <label for="form_email">Work email *</label>
+                                          <input id="form_email1" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
 
                             </div>
                         </div>
@@ -423,14 +429,24 @@
                                     <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
                                     <div class="help-block with-errors"></div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                  <label for="form_jobtitle">Job title *</label>
-                                  <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
-                                  <div class="help-block with-errors"></div>
-                              </div>
-                            </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Name *</label>
+                                            <input id="form_name1" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_jobtitle">Job title *</label>
+                                          <input id="form_jobtitle1" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+
+
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -506,7 +522,7 @@ Dimensions: Indicate dimensions (optional)
                                       <div class="col-md-12">
                                         <div class="form-group">
                                             <label for="form_email">Work email *</label>
-                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                            <input id="form_email2" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
 
@@ -518,14 +534,14 @@ Dimensions: Indicate dimensions (optional)
                                       <div class="col-md-6">
                                           <div class="form-group">
                                               <label for="form_name">Name *</label>
-                                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                              <input id="form_name2" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
                                               <div class="help-block with-errors"></div>
                                           </div>
                                       </div>
                                       <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="form_jobtitle">Job title *</label>
-                                            <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                            <input id="form_jobtitle2" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
 
@@ -643,7 +659,7 @@ Dimensions: Indicate dimensions (optional)
                                     <div class="col-md-12">
                                       <div class="form-group">
                                           <label for="form_email">Work email *</label>
-                                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                          <input id="form_email3" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
                                           <div class="help-block with-errors"></div>
                                       </div>
 
@@ -655,14 +671,14 @@ Dimensions: Indicate dimensions (optional)
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="form_name">Name *</label>
-                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <input id="form_name3" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                           <label for="form_jobtitle">Job title *</label>
-                                          <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                          <input id="form_jobtitle3" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
                                           <div class="help-block with-errors"></div>
                                       </div>
 
@@ -774,7 +790,7 @@ Dimensions: Indicate dimensions (optional)
                                       <div class="col-md-12">
                                         <div class="form-group">
                                             <label for="form_email">Work email *</label>
-                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                            <input id="form_email4" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
 
@@ -786,14 +802,14 @@ Dimensions: Indicate dimensions (optional)
                                       <div class="col-md-6">
                                           <div class="form-group">
                                               <label for="form_name">Name *</label>
-                                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                              <input id="form_name4" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
                                               <div class="help-block with-errors"></div>
                                           </div>
                                       </div>
                                       <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="form_jobtitle">Job title *</label>
-                                            <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                            <input id="form_jobtitle4" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
 
@@ -890,7 +906,7 @@ Dimensions: Indicate dimensions (optional)
                         <div class="col-md-12">
                           <div class="form-group">
                               <label for="form_email">Work email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <input id="form_email5" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
                               <div class="help-block with-errors"></div>
                           </div>
 
@@ -902,14 +918,14 @@ Dimensions: Indicate dimensions (optional)
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="form_name">Name *</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <input id="form_name5" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
                               <label for="form_jobtitle">Job title *</label>
-                              <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                              <input id="form_jobtitle5" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
                               <div class="help-block with-errors"></div>
                           </div>
 
