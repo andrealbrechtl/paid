@@ -387,68 +387,7 @@
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/classie.js"></script>
 
-    <!--LOGIN MODAL-->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="login-img-container"><img class="img-reset" src="images/login.svg" alt="Sinewave - Powerful Web Hosting"></div>
-              </div>
-              <div class="col-sm-6">
-                <div class="login-form" id="login">
-                  <div class="model-form-heading text-center">Welcome To Sinewave</div>
-                  <div class="form-sub-content">Lorem Ipsum is simply dummy text of the printing online editing.</div>
-                  <div class="form-modal-container">
-                    <div class="form-group">
-                      <input class="form-control edit-form-input" id="usr" type="text" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                      <input class="form-control edit-form-input" id="pwd" type="password" placeholder="Password">
-                    </div><a class="forget-password text-left" id="forgotFormBtn" href="javascript:;">Forget Password?</a>
-                    <button class="btn btn-success btn-xs btn-rounded text-center" type="button">Submit</button>
-                    <div class="account">Don't have an account?<a href="javascript:;" id="signUpModal">Sign Up</a></div>
-                  </div>
-                </div>
-                <div class="signup-form" id="signUp">
-                  <div class="model-form-heading text-center">Welcome To Sinewave</div>
-                  <div class="form-sub-content">Lorem Ipsum is simply dummy text of the printing online editing.</div>
-                  <div class="form-modal-container">
-                    <div class="alert alert-success" role="alert">Successfully Registered</div>
-                    <div class="form-group">
-                      <input class="form-control edit-form-input" id="name" type="text" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                      <input class="form-control edit-form-input" id="user-email" type="text" placeholder="email">
-                    </div>
-                    <div class="form-group">
-                      <input class="form-control edit-form-input" id="password" type="password" placeholder="Password">
-                    </div>
-                    <button class="btn btn-success btn-xs btn-rounded text-center" type="button">Submit</button>
-                    <div class="account">Already have account<a href="javascript:;" id="formloginModal">Login</a></div>
-                  </div>
-                </div>
-                <div class="forget-password-field" id="forgetPassword">
-                  <div class="model-form-heading text-center">Reset your password</div>
-                  <div class="form-sub-content">Lorem Ipsum is simply dummy text of the Printing.</div>
-                  <div class="form-modal-container">
-                    <div class="form-group">
-                      <input class="form-control edit-form-input" id="email-reset" type="text" placeholder="email">
-                    </div>
-                    <button class="btn btn-success btn-xs btn-rounded text-center" type="button">Submit</button>
-                    <div class="account"><a href="javascript:;" id="modal-login-btn">Back to Login</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
     <!-- Modal plan1 sup -->
     <div class="modal fade" id="modal_plan1_sup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -460,15 +399,18 @@
 
 
             <form id="contact-form_sup_free" role="form" style="">
-              Material/standard/grade: Indicate if different from current material page (optional)
-  Form: Indicate form (optional; refer to Forms on home page for examples)
-              <input  type="hidden" name="plan" value="free-supplier" >
-
-
-                            <div class="messages"></div>
-
-                            <div class="controls">
-                <div class="row">
+              <P class='form_p'>Material/standard/grade: Indicate if different from current material page (optional)
+                  Form: Indicate form (optional; refer to Forms on home page for examples)</P>
+              <input  type="hidden" name="plan" value="free-supplier">
+                <div class="messages"></div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                  <label for="form_email">Work email *</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
 
                                     <div class="col-md-12">
                                       <div class="form-group">
@@ -477,8 +419,15 @@
                                           <div class="help-block with-errors"></div>
                                       </div>
 
+                            </div>
+                        </div>
 
-                                    </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Name *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="row">
@@ -534,7 +483,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_free_s">
+                                        <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_free_s">
                                     </div>
                                 </div>
                             </div>
@@ -559,10 +508,10 @@
           <div class="popup-body" id="body_sup_2" >
 
               <form id="contact-form_sup_2" role="form" style="">
-                Material/standard/grade: Indicate if different from current material page (optional)
+                <P class='form_p'>Material/standard/grade: Indicate if different from current material page (optional)
 Form: Indicate form (optional; refer to Forms on home page for examples)
 Dimensions: Indicate dimensions (optional)
-Other: Preferred origin, compliance with standards, etc. (optional)
+                    Other: Preferred origin, compliance with standards, etc. (optional) </P>
                 <input  type="hidden" name="plan" value="standard-supplier" >
 
                               <div class="messages"></div>
@@ -633,7 +582,7 @@ Other: Preferred origin, compliance with standards, etc. (optional)
                                           </div>
                                       </div>
                                       <div class="col-md-12">
-                                          <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_2_s">
+                                          <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_2_s">
                                       </div>
                                   </div>
                               </div>
@@ -694,12 +643,11 @@ Other: Preferred origin, compliance with standards, etc. (optional)
 
 
             <form id="contact-form_sup_3" role="form" style="">
-              Material/standard/grade: Indicate if different from current material page (optional)<br>
+              <P class='form_p'>Material/standard/grade: Indicate if different from current material page (optional)<br>
   Form: Indicate form (optional; refer to Forms on home page for examples)<br>
   Dimensions: Indicate dimensions (optional)<br>
   Availability and delivery terms: Specify (optional)<br>
-  Other: Preferred origin, compliance with standards, etc. (optional)<br>
-  <br>
+                  Other: Preferred origin, compliance with standards, etc. (optional)</P>
 
               <input  type="hidden" name="plan" value="customized-supplier" >
 
@@ -771,7 +719,7 @@ Other: Preferred origin, compliance with standards, etc. (optional)
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_3_s">
+                                        <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_3_s">
                                     </div>
                                 </div>
                             </div>
@@ -829,8 +777,8 @@ Other: Preferred origin, compliance with standards, etc. (optional)
 
 
             <form id="contact-form_sup_4" method="post" role="form">
-              Find value: State property (obligatory) and parameters e.g. temperature (optional)
-  Check value: State property and value (obligatory)  / suggest alternative value and/or reference (optional)
+              <P class='form_p'>Find value: State property (obligatory) and parameters e.g. temperature (optional)
+                  Check value: State property and value (obligatory)  / suggest alternative value and/or reference (optional)</P>
               <form id="contact-form_sup_4" role="form" style="">
                 <input  type="hidden" name="plan" value="free-material" >
 
@@ -905,7 +853,7 @@ Other: Preferred origin, compliance with standards, etc. (optional)
                                           </div>
                                       </div>
                                       <div class="col-md-12">
-                                          <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_4_s">
+                                          <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_4_s">
                                       </div>
                                   </div>
                               </div>
@@ -943,11 +891,11 @@ Other: Preferred origin, compliance with standards, etc. (optional)
           <div class="popup-body" id="body_sup_5" >
 
               <form id="contact-form_sup_5" role="form" style="">
-                Find value: State property (mandatory) and parameters e.g. temperature (optional)
+                <P class='form_p'>Find value: State property (mandatory) and parameters e.g. temperature (optional)
     Check value: State property and value (mandatory)  / suggest alternative value and/or reference (optional)
     Find equivalent standard: Indicate country and/or standard organization (mandatory)
     Find alternative material: Indicate required standards and/or propertys and values (mandatory)
-    Check suitability: Specify application (mandatory; refer to Applications on home page for examples)
+                    Check suitability: Specify application (mandatory; refer to Applications on home page for examples) </P>
                 <input  type="hidden" name="plan" value="customized-material" >
 
                 <div class="messages"></div>
@@ -1025,7 +973,7 @@ Other: Preferred origin, compliance with standards, etc. (optional)
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_5_s">
+                            <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_5_s">
                         </div>
                     </div>
                 </div>
