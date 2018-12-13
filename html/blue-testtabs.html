@@ -524,6 +524,8 @@
 
 
           <div class="popup-body" id="body_sup_1" >
+            Material/standard/grade: Indicate if different from current material page (optional)
+Form: Indicate form (optional; refer to Forms on home page for examples)
 
             <form id="contact-form_sup_free" role="form" style="">
               <input  type="hidden" name="plan" value="free-supplier" >
@@ -573,14 +575,9 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="form_need">Please specify your request *</label>
-                                            <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                                <option value=""></option>
-                                                <option value="Request quotation">Request quotation</option>
-                                                <option value="Request order status">Request order status</option>
-                                                <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                                <option value="Other">Other</option>
-                                            </select>
+                                            <label for="mat_name">Material name *</label>
+                                            <input id="mat_name" name="Material name" class="form-control" required="required" data-error="Please specify material name.">
+
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -590,7 +587,7 @@
                 					<div class="col-md-12">
                                         <div class="form-group">
                                             <label for="form_message">Message *</label>
-                                            <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Please specify material information regarding Material/standard/grade and form" rows="4" required="required" data-error="Please, leave us a message."></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div><div class="col-md-12">
@@ -628,6 +625,10 @@
           <div class="popup-body" id="body_sup_2" >
 
               <form id="contact-form_sup_2" role="form" style="">
+                Material/standard/grade: Indicate if different from current material page (optional)
+Form: Indicate form (optional; refer to Forms on home page for examples)
+Dimensions: Indicate dimensions (optional)
+Other: Preferred origin, compliance with standards, etc. (optional)
                 <input  type="hidden" name="plan" value="standard-supplier" >
 
                               <div class="messages"></div>
@@ -674,14 +675,8 @@
                                       </div>
                                       <div class="col-md-6">
                                           <div class="form-group">
-                                              <label for="form_need">Please specify your request *</label>
-                                              <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                                  <option value=""></option>
-                                                  <option value="Request quotation">Request quotation</option>
-                                                  <option value="Request order status">Request order status</option>
-                                                  <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                                  <option value="Other">Other</option>
-                                              </select>
+                                            <label for="mat_name">Material name *</label>
+                                            <input id="mat_name" name="Material name" class="form-control" required="required" data-error="Please specify material name.">
                                               <div class="help-block with-errors"></div>
                                           </div>
                                       </div>
@@ -762,8 +757,15 @@
 
 
           <div class="popup-body" id="body_sup_3" >
+            Material/standard/grade: Indicate if different from current material page (optional)<br>
+Form: Indicate form (optional; refer to Forms on home page for examples)<br>
+Dimensions: Indicate dimensions (optional)<br>
+Availability and delivery terms: Specify (optional)<br>
+Other: Preferred origin, compliance with standards, etc. (optional)<br>
+<br>
 
             <form id="contact-form_sup_3" role="form" style="">
+
               <input  type="hidden" name="plan" value="customized-supplier" >
 
                             <div class="messages"></div>
@@ -810,14 +812,8 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="form_need">Please specify your request *</label>
-                                            <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                                <option value=""></option>
-                                                <option value="Request quotation">Request quotation</option>
-                                                <option value="Request order status">Request order status</option>
-                                                <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                                <option value="Other">Other</option>
-                                            </select>
+                                          <label for="mat_name">Material name *</label>
+                                          <input id="mat_name" name="Material name" class="form-control" required="required" data-error="Please specify material name.">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -895,6 +891,8 @@
 
 
           <div class="popup-body" id="body_sup_4" >
+            Find value: State property (obligatory) and parameters e.g. temperature (optional)
+Check value: State property and value (obligatory)  / suggest alternative value and/or reference (optional)
 
             <form id="contact-form_sup_4" method="post" action="contact.php" role="form">
               <form id="contact-form_sup_4" role="form" style="">
@@ -1010,6 +1008,11 @@
 
 
           <div class="popup-body" id="body_sup_5" >
+            Find value: State property (mandatory) and parameters e.g. temperature (optional)
+Check value: State property and value (mandatory)  / suggest alternative value and/or reference (optional)
+Find equivalent standard: Indicate country and/or standard organization (mandatory)
+Find alternative material: Indicate required standards and/or properties and values (mandatory)
+Check suitability: Specify application (mandatory; refer to Applications on home page for examples)
               <form id="contact-form_sup_5" role="form" style="">
                 <input  type="hidden" name="plan" value="customized-material" >
 

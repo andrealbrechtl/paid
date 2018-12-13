@@ -310,6 +310,14 @@ function sendform(form) {
                     dataType: "json"
                     });
 }
+function payment(email) {
+  var request = $.ajax({
+                    url: "https://workersapp.herokuapp.com/payment_button",
+                    type: "POST",
+                    data: {"email":email},
+                    dataType: "json"
+                    });
+}
 
 //reset on click
 document.getElementById('btn_sup_free').addEventListener('click', function(e) {
@@ -320,16 +328,19 @@ document.getElementById('btn_sup_free').addEventListener('click', function(e) {
 
 document.getElementById('btn_sup_2').addEventListener('click', function(e) {
   $('#request_sent_2').attr('style', "display:none;");
+  $('#request_sent_2_p').attr('style', "display:none;");
+
   $('#contact-form_sup_2').attr('style', "");
   $('#contact-form_sup_2')[0].reset();
 })
 
 document.getElementById('btn_sup_3').addEventListener('click', function(e) {
   $('#request_sent_3').attr('style', "display:none;");
+  $('#request_sent_3_p').attr('style', "display:none;");
   $('#contact-form_sup_3').attr('style', "");
   $('#contact-form_sup_3')[0].reset();
 })
-/*
+
 document.getElementById('btn_sup_4').addEventListener('click', function(e) {
   $('#request_sent_4').attr('style', "display:none;");
   $('#contact-form_sup_4').attr('style', "");
@@ -338,10 +349,12 @@ document.getElementById('btn_sup_4').addEventListener('click', function(e) {
 
 document.getElementById('btn_sup_5').addEventListener('click', function(e) {
   $('#request_sent_5').attr('style', "display:none;");
+  $('#request_sent_5_p').attr('style', "display:none;");
+
   $('#contact-form_sup_5').attr('style', "");
   $('#contact-form_sup_5')[0].reset();
 })
-*/
+
 
 
 //pricing buttons
@@ -351,11 +364,13 @@ document.getElementById('btn_sup_5').addEventListener('click', function(e) {
 
       var formData = $('#contact-form_sup_free').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
       sendform(formData)
+
       console.log(formData)
       var style = "width:" + $('#body_sup_1').width().toString() + "px;height:" + $('#body_sup_1').height().toString() + "px;"
       console.log($('#request_sent_1'))
       $('#request_sent_1').attr('style', style);
       $('#contact-form_sup_free').attr('style', "display:none;");
+      localStorage.setItem('email', formData["email"]);
 
 })
 $('#contact-form_sup_2').on('submit', function(e) {
@@ -363,56 +378,113 @@ $('#contact-form_sup_2').on('submit', function(e) {
 
     var formData = $('#contact-form_sup_2').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
     sendform(formData)
+
     console.log(formData)
     var style = "width:" + $('#body_sup_2').width().toString() + "px;height:" + $('#body_sup_2').height().toString() + "px;"
     console.log($('#request_sent_2'))
     $('#request_sent_2').attr('style', style);
     $('#contact-form_sup_2').attr('style', "display:none;");
-
+    localStorage.setItem('email', formData["email"]);
     e.preventDefault()
 
 })
 $('#contact-form_sup_3').on('submit', function(e) {
 //document.getElementById('btn_sup_3_s').addEventListener('click', function(e) {
-
+    e.preventDefault()
     var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
     sendform(formData)
+
     console.log(formData)
     var style = "width:" + $('#body_sup_3').width().toString() + "px;height:" + $('#body_sup_3').height().toString() + "px;"
     console.log($('#request_sent_3'))
     $('#request_sent_3').attr('style', style);
     $('#contact-form_sup_3').attr('style', "display:none;");
+    localStorage.setItem('email', formData["email"]);
 
-    e.preventDefault()
 
 })
 
+$('#contact-form_sup_4').on('submit', function(e) {
+//document.getElementById('btn_sup_3_s').addEventListener('click', function(e) {
+    e.preventDefault()
+    var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
+    sendform(formData)
+
+    console.log(formData)
+    var style = "width:" + $('#body_sup_4').width().toString() + "px;height:" + $('#body_sup_4').height().toString() + "px;"
+    console.log($('#request_sent_3'))
+    $('#request_sent_4').attr('style', style);
+    $('#contact-form_sup_4').attr('style', "display:none;");
+    localStorage.setItem('email', formData["email"]);
+
+
+
+})
+$('#contact-form_sup_5').on('submit', function(e) {
+//document.getElementById('btn_sup_3_s').addEventListener('click', function(e) {
+    e.preventDefault()
+    var formData = $('#contact-form_sup_5').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
+    sendform(formData)
+
+    console.log(formData)
+    var style = "width:" + $('#body_sup_5').width().toString() + "px;height:" + $('#body_sup_5').height().toString() + "px;"
+    console.log($('#request_sent_3'))
+    $('#request_sent_5').attr('style', style);
+    $('#contact-form_sup_5').attr('style', "display:none;");
+    localStorage.setItem('email', formData["email"]);
+
+
+})
 //Pay buttons
 document.getElementById('btn_sup_2_p').addEventListener('click', function(e) {
-
+    e.preventDefault()
     //var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
     //console.log(formData)
     var style = "width:" + $('#body_sup_2').width().toString() + "px;height:" + $('#body_sup_2').height().toString() + "px;"
     console.log($('#request_sent_2_p'))
     $('#request_sent_2_p').attr('style', style);
     $('#request_sent_2').attr('style', "display:none;");
+    payment(localStorage.getItem('email'))
 
-    e.preventDefault()
+
 
 })
 
 document.getElementById('btn_sup_3_p').addEventListener('click', function(e) {
-
+    e.preventDefault()
     //var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
     //console.log(formData)
     var style = "width:" + $('#body_sup_3').width().toString() + "px;height:" + $('#body_sup_3').height().toString() + "px;"
     console.log($('#request_sent_3_p'))
     $('#request_sent_3_p').attr('style', style);
     $('#request_sent_3').attr('style', "display:none;");
-
-    e.preventDefault()
+    payment(localStorage.getItem('email'))
 
 })
+
+document.getElementById('btn_sup_5_p').addEventListener('click', function(e) {
+    e.preventDefault()
+    //var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
+    //console.log(formData)
+    var style = "width:" + $('#body_sup_3').width().toString() + "px;height:" + $('#body_sup_3').height().toString() + "px;"
+    console.log($('#request_sent_3_p'))
+    $('#request_sent_3_p').attr('style', style);
+    $('#request_sent_3').attr('style', "display:none;");
+    payment(localStorage.getItem('email'))
+
+})
+
+//analytics
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-85033665-5');
+
+
 
 //hotjar
 

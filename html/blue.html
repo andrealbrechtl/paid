@@ -49,8 +49,8 @@
               <div class="col-md">
                 <h1 class="heading-page">Get help from our materials experts</h1>
                 <p class="sub-content">We can help you find a supplier or provide in-depth knowledge about a specific material. What would you like to do?</p>
-                <a class="btn btn-matmatch btn-lg page-scroll wow " href="#pricing-plan" data-wow-duration="0.8s" data-wow-delay="0.6s"><span>I need a material supplier</span></a>
-                <a class="btn btn-matmatch btn-lg page-scroll wow " href="#pricing-plan" data-wow-duration="0.8s" data-wow-delay="0.6s"><span>I need a material supplier</span></a>
+                <a class="btn btn-matmatch btn-lg page-scroll wow " href="#pricing" data-wow-duration="0.8s" data-wow-delay="0.6s"><span>I need a material supplier</span></a>
+                <a class="btn btn-matmatch btn-lg page-scroll wow " href="#pricing" data-wow-duration="0.8s" data-wow-delay="0.6s"><span>I need material data</span></a>
               </div>
               <!--carroussel-->
             </div>
@@ -133,7 +133,7 @@
                     <h3>Everything about materials</h3>
                   </div>
                   <div class="content">
-                    <p>Find equivalent standards, additional properties, substitutes, comparison, applications.</p>
+                    <p>Find equivalent standards, additional propertys, substitutes, comparison, applications.</p>
                   </div>
                 </div>
           </div>
@@ -171,7 +171,7 @@
             </div>
           </div>
     </section>
-    <div class="pricing-section">
+    <div class="pricing-section" id="pricing">
         <div class="content-section">
           <div class="panel with-nav-tabs panel-default panel-matmatch">
           <div class="panel-heading">
@@ -192,7 +192,7 @@
                         <div class="starter container-1 text-center">
                           <h1 class="heading">Free Sourcing</h1>
                         </div>
-                        <h2 class="text-digit">$0.00<span class="month">free</span></h2>
+                        <h2 class="text-digit">€0.00<span class="month">free</span></h2>
                       </div>
                       <div class="gray-content-container">
                         <ul class="content-pricing">
@@ -216,7 +216,7 @@
                         <div class="basic-container-2 container-1 text-center">
                           <h1 class="heading">Standard Sourcing</h1>
                         </div>
-                        <h2 class="text-digit">$39<span class="month">per request</span></h2>
+                        <h2 class="text-digit">€39<span class="month">per request</span></h2>
                       </div>
                       <div class="basic gray-content-container">
                         <ul class="content-pricing">
@@ -240,7 +240,7 @@
                         <div class="professional-container-2 container-1 text-center">
                           <h1 class="heading">Customized Sourcing</h1>
                         </div>
-                        <h2 class="text-digit">$99<span class="month">per request</span></h2>
+                        <h2 class="text-digit">€99<span class="month">per request</span></h2>
                       </div>
                       <div class="professional gray-content-container">
                         <ul class="content-pricing">
@@ -271,13 +271,13 @@
                         <div class="enterprise-container-2 container-1 text-center">
                           <h1 class="heading">FREE ASSISTANCE</h1>
                         </div>
-                        <h2 class="text-digit">$0.00<span class="month">free</span></h2>
+                        <h2 class="text-digit">€0.00<span class="month">free</span></h2>
                       </div>
                       <div class="enterprise gray-content-container">
                         <ul class="content-pricing">
-                          <li><span class="text-important">Find </span>value for unlisted propertie
+                          <li><span class="text-important">Find </span>value for unlisted property
                           </li>
-                          <li><span class="text-important">Check </span>value for listed propertie
+                          <li><span class="text-important">Check </span>value for listed property
                           </li>
 
                         </ul>
@@ -290,11 +290,11 @@
                         <div class="enterprise-container-2 container-1 text-center">
                           <h1 class="heading">CUSTOMIZED ASSISTANCE</h1>
                         </div>
-                        <h2 class="text-digit">$29<span class="month">per request</span></h2>
+                        <h2 class="text-digit">€29<span class="month">per request</span></h2>
                       </div>
                       <div class="enterprise gray-content-container">
                         <ul class="content-pricing">
-                          <li><span class="text-important">Find </span>value for unlisted propertie
+                          <li><span class="text-important">Find </span>value for unlisted property
                           </li>
                           <li><span class="text-important">Estimate </span>material data
                           </li>
@@ -306,7 +306,7 @@
                           </li>
 
                         </ul>
-                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan4_sup" id="btn_sup_4"><span>REQUEST</span></a>
+                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan4_sup" id="btn_sup_5"><span>REQUEST</span></a>
                       </div>
                     </div>
 
@@ -379,10 +379,11 @@
 
 
     <!--SCRIPTS-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85033665-5"></script>
         <script src="js/jquery-2.2.4.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/infobox.js"></script>
+    <!--    <script src="js/infobox.js"></script> -->
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/classie.js"></script>
 
@@ -457,67 +458,88 @@
 
           <div class="popup-body" id="body_sup_1" >
 
-            <form id="contact-form_sup_free" role="form">
 
-                <div class="messages"></div>
+            <form id="contact-form_sup_free" role="form" style="">
+              Material/standard/grade: Indicate if different from current material page (optional)
+  Form: Indicate form (optional; refer to Forms on home page for examples)
+              <input  type="hidden" name="plan" value="free-supplier" >
 
-                <div class="controls">
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_name">Name *</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
+                            <div class="messages"></div>
+
+                            <div class="controls">
+                <div class="row">
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                          <label for="form_email">Work email *</label>
+                                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Name *</label>
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_jobtitle">Job title *</label>
+                                          <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_company">Organization *</label>
+                                          <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="mat_name">Material name *</label>
+                                            <input id="mat_name" name="Material name" class="form-control" required="required" data-error="Please specify material name.">
+
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                          <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Please specify material information regarding Material/standard/grade and form" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div><div class="col-md-12">
+                                        <div class="form-group">
+
+                                            <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
+                zoom: 1.5;
+            "> I have read and agreed to the Matmatch <a href="https://matmatch.com/imprint#tnc-buyers" style="display:inline;color:#337ab7;">Terms and Conditions</a> and <a href="https://matmatch.com/imprint#privacy-policy" style="display:inline;color:#337ab7;">Privacy Policy</a>.
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_free_s">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_email">Email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
 
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_company">Company *</label>
-                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_need">Please specify your request *</label>
-                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                    <option value=""></option>
-                                    <option value="Request quotation">Request quotation</option>
-                                    <option value="Request order status">Request order status</option>
-                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_free_s" >
-                        </div>
-                    </div>
-                </div>
-
-            </form>
+                        </form>
 
             <div id="request_sent_1" style= "display:none;">
               Thank you for sending the request
@@ -536,67 +558,87 @@
 
           <div class="popup-body" id="body_sup_2" >
 
-            <form id="contact-form_sup_2" method="post" action="contact.php" role="form">
+              <form id="contact-form_sup_2" role="form" style="">
+                Material/standard/grade: Indicate if different from current material page (optional)
+Form: Indicate form (optional; refer to Forms on home page for examples)
+Dimensions: Indicate dimensions (optional)
+Other: Preferred origin, compliance with standards, etc. (optional)
+                <input  type="hidden" name="plan" value="standard-supplier" >
 
-                <div class="messages"></div>
+                              <div class="messages"></div>
 
-                <div class="controls">
+                              <div class="controls">
+                  <div class="row">
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_name">Name *</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_email">Email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
+                                      <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_email">Work email *</label>
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
 
 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_company">Company *</label>
-                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_need">Please specify your request *</label>
-                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                    <option value=""></option>
-                                    <option value="Request quotation">Request quotation</option>
-                                    <option value="Request order status">Request order status</option>
-                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_2_s" >
-                        </div>
-                    </div>
-                </div>
+                                      </div>
+                                  </div>
 
-            </form>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="form_name">Name *</label>
+                                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_jobtitle">Job title *</label>
+                                            <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_company">Organization *</label>
+                                            <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                            <label for="mat_name">Material name *</label>
+                                            <input id="mat_name" name="Material name" class="form-control" required="required" data-error="Please specify material name.">
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+
+                            <div class="col-md-12">
+                                          <div class="form-group">
+                                              <label for="form_message">Message *</label>
+                                              <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div><div class="col-md-12">
+                                          <div class="form-group">
+
+                                            <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
+                zoom: 1.5;
+            "> I have read and agreed to the Matmatch <a href="https://matmatch.com/imprint#tnc-buyers" style="display:inline;color:#337ab7;">Terms and Conditions</a> and <a href="https://matmatch.com/imprint#privacy-policy" style="display:inline;color:#337ab7;">Privacy Policy</a>.
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-12">
+                                          <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_2_s">
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </form>
 
             <div id="request_sent_2" style= "display:none;">
                 <div class="row">
@@ -613,7 +655,7 @@
 
               <div class="row">
                 <div class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Pay $20" id="btn_sup_2_p" >
+                    <input type="submit" class="btn btn-success btn-send" value="Pay €20" id="btn_sup_2_p" >
                 </div>
             </div>
 
@@ -650,67 +692,91 @@
 
           <div class="popup-body" id="body_sup_3" >
 
-            <form id="contact-form_sup_3" method="post" action="contact.php" role="form">
 
-                <div class="messages"></div>
+            <form id="contact-form_sup_3" role="form" style="">
+              Material/standard/grade: Indicate if different from current material page (optional)<br>
+  Form: Indicate form (optional; refer to Forms on home page for examples)<br>
+  Dimensions: Indicate dimensions (optional)<br>
+  Availability and delivery terms: Specify (optional)<br>
+  Other: Preferred origin, compliance with standards, etc. (optional)<br>
+  <br>
 
-                <div class="controls">
+              <input  type="hidden" name="plan" value="customized-supplier" >
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_name">Name *</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
+                            <div class="messages"></div>
+
+                            <div class="controls">
+                <div class="row">
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                          <label for="form_email">Work email *</label>
+                                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Name *</label>
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_jobtitle">Job title *</label>
+                                          <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_company">Organization *</label>
+                                          <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="mat_name">Material name *</label>
+                                          <input id="mat_name" name="Material name" class="form-control" required="required" data-error="Please specify material name.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                          <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div><div class="col-md-12">
+                                        <div class="form-group">
+
+                                          <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
+              zoom: 1.5;
+          "> I have read and agreed to the Matmatch <a href="https://matmatch.com/imprint#tnc-buyers" style="display:inline;color:#337ab7;">Terms and Conditions</a> and <a href="https://matmatch.com/imprint#privacy-policy" style="display:inline;color:#337ab7;">Privacy Policy</a>.
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_3_s">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_email">Email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
 
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_company">Company *</label>
-                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_need">Please specify your request *</label>
-                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                    <option value=""></option>
-                                    <option value="Request quotation">Request quotation</option>
-                                    <option value="Request order status">Request order status</option>
-                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_3_s" >
-                        </div>
-                    </div>
-                </div>
-
-            </form>
+                        </form>
 
             <div id="request_sent_3" style= "display:none;">
                 <div class="row">
@@ -727,7 +793,7 @@
 
               <div class="row">
                 <div class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Pay $20" id="btn_sup_3_p" >
+                    <input type="submit" class="btn btn-success btn-send" value="Pay €20" id="btn_sup_3_p" >
                 </div>
             </div>
 
@@ -761,67 +827,90 @@
 
           <div class="popup-body" id="body_sup_4" >
 
-            <form id="contact-form_sup_4" method="post" action="contact.php" role="form">
 
-                <div class="messages"></div>
+            <form id="contact-form_sup_4" method="post" role="form">
+              Find value: State property (obligatory) and parameters e.g. temperature (optional)
+  Check value: State property and value (obligatory)  / suggest alternative value and/or reference (optional)
+              <form id="contact-form_sup_4" role="form" style="">
+                <input  type="hidden" name="plan" value="free-material" >
 
-                <div class="controls">
+                              <div class="messages"></div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_name">Name *</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_email">Email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
+                              <div class="controls">
+                  <div class="row">
+
+                                      <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_email">Work email *</label>
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
 
 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_company">Company *</label>
-                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_need">Please specify your request *</label>
-                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                    <option value=""></option>
-                                    <option value="Request quotation">Request quotation</option>
-                                    <option value="Request order status">Request order status</option>
-                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_4_s" >
-                        </div>
-                    </div>
-                </div>
+                                      </div>
+                                  </div>
 
-            </form>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="form_name">Name *</label>
+                                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_jobtitle">Job title *</label>
+                                            <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_company">Organization *</label>
+                                            <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="form_need">Please specify your request *</label>
+                                              <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                  <option value="Find unlisted property">Find unlisted property</option>
+                                                  <option value="Check listed property">Check listed property</option>
+                                              </select>
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+
+                            <div class="col-md-12">
+                                          <div class="form-group">
+                                              <label for="form_message">Message *</label>
+                                              <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div><div class="col-md-12">
+                                          <div class="form-group">
+
+                                            <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
+                zoom: 1.5;
+            "> I have read and agreed to the Matmatch <a href="https://matmatch.com/imprint#tnc-buyers" style="display:inline;color:#337ab7;">Terms and Conditions</a> and <a href="https://matmatch.com/imprint#privacy-policy" style="display:inline;color:#337ab7;">Privacy Policy</a>.
+                                              <div class="help-block with-errors"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-12">
+                                          <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_4_s">
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </form>
 
             <div id="request_sent_4" style= "display:none;">
                 <div class="row">
@@ -853,11 +942,29 @@
 
           <div class="popup-body" id="body_sup_5" >
 
-            <form id="contact-form_sup_5" method="post" action="contact.php" role="form">
+              <form id="contact-form_sup_5" role="form" style="">
+                Find value: State property (mandatory) and parameters e.g. temperature (optional)
+    Check value: State property and value (mandatory)  / suggest alternative value and/or reference (optional)
+    Find equivalent standard: Indicate country and/or standard organization (mandatory)
+    Find alternative material: Indicate required standards and/or propertys and values (mandatory)
+    Check suitability: Specify application (mandatory; refer to Applications on home page for examples)
+                <input  type="hidden" name="plan" value="customized-material" >
 
                 <div class="messages"></div>
 
                 <div class="controls">
+    <div class="row">
+
+                        <div class="col-md-12">
+                          <div class="form-group">
+                              <label for="form_email">Work email *</label>
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+
+
+                        </div>
+                    </div>
 
                     <div class="row">
                         <div class="col-md-6">
@@ -869,8 +976,8 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                              <label for="form_email">Email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <label for="form_jobtitle">Job title *</label>
+                              <input id="form_jobtitle" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
                               <div class="help-block with-errors"></div>
                           </div>
 
@@ -880,8 +987,8 @@
                     <div class="row">
                         <div class="col-md-6">
                           <div class="form-group">
-                              <label for="form_company">Company *</label>
-                              <input id="form_company" type="text" name="Company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Company name is required.">
+                              <label for="form_company">Organization *</label>
+                              <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
                               <div class="help-block with-errors"></div>
                           </div>
                         </div>
@@ -889,26 +996,36 @@
                             <div class="form-group">
                                 <label for="form_need">Please specify your request *</label>
                                 <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                    <option value=""></option>
-                                    <option value="Request quotation">Request quotation</option>
-                                    <option value="Request order status">Request order status</option>
-                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                    <option value="Other">Other</option>
+                                    <option value="Find unlisted property">Find unlisted property</option>
+                                    <option value="Check listed property">Check listed property</option>
+                                    <option value="Estimate material data">Estimate material data</option>
+                                    <option value="Find equivalent standard">Find equivalent standard</option>
+                                    <option value="Find alternative materials">Find alternative materials</option>
+                                    <option value="Application suitability">Application suitability</option>
                                 </select>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+
+              <div class="col-md-12">
                             <div class="form-group">
                                 <label for="form_message">Message *</label>
                                 <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
+                        </div><div class="col-md-12">
+                            <div class="form-group">
+
+                              <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
+  zoom: 1.5;
+"> I have read and agreed to the Matmatch <a href="https://matmatch.com/imprint#tnc-buyers" style="display:inline;color:#337ab7;">Terms and Conditions</a> and <a href="https://matmatch.com/imprint#privacy-policy" style="display:inline;color:#337ab7;">Privacy Policy</a>.
+                                <div class="help-block with-errors"></div>
+                            </div>
                         </div>
                         <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_5_s" >
+                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_5_s">
                         </div>
                     </div>
                 </div>
@@ -930,7 +1047,7 @@
 
               <div class="row">
                 <div class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Pay $20" id="btn_sup_5_p" >
+                    <input type="submit" class="btn btn-success btn-send" value="Pay €20" id="btn_sup_5_p" >
                 </div>
             </div>
 
