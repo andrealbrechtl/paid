@@ -406,12 +406,6 @@
                     <div class="controls">
                         <div class="row">
                             <div class="col-md-12">
-                              <div class="form-group">
-                                  <label for="form_email">Work email *</label>
-                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                  <div class="help-block with-errors"></div>
-                              </div>
-
                                     <div class="col-md-12">
                                       <div class="form-group">
                                           <label for="form_email">Work email *</label>
@@ -890,95 +884,90 @@ Dimensions: Indicate dimensions (optional)
 
           <div class="popup-body" id="body_sup_5" >
 
-              <form id="contact-form_sup_5" role="form" style="">
-                <P class='form_p'>Find value: State property (mandatory) and parameters e.g. temperature (optional)
-    Check value: State property and value (mandatory)  / suggest alternative value and/or reference (optional)
-    Find equivalent standard: Indicate country and/or standard organization (mandatory)
-    Find alternative material: Indicate required standards and/or propertys and values (mandatory)
-                    Check suitability: Specify application (mandatory; refer to Applications on home page for examples) </P>
-                <input  type="hidden" name="plan" value="customized-material" >
 
-                <div class="messages"></div>
+            <form id="contact-form_sup_5" role="form" style="">
+              <P class='form_p'>Material/standard/grade: Indicate if different from current material page (optional)<br>
+  Form: Indicate form (optional; refer to Forms on home page for examples)<br>
+  Dimensions: Indicate dimensions (optional)<br>
+  Availability and delivery terms: Specify (optional)<br>
+                  Other: Preferred origin, compliance with standards, etc. (optional)</P>
 
-                <div class="controls">
-    <div class="row">
+              <input  type="hidden" name="plan" value="customized-supplier" >
 
-                        <div class="col-md-12">
-                          <div class="form-group">
-                              <label for="form_email">Work email *</label>
-                              <input id="form_email5" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
+                            <div class="messages"></div>
+
+                            <div class="controls">
+                <div class="row">
+
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                          <label for="form_email">Work email *</label>
+                                          <input id="form_email3" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
 
 
-                        </div>
-                    </div>
+                                    </div>
+                                </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_name">Name *</label>
-                                <input id="form_name5" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Name *</label>
+                                            <input id="form_name3" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_jobtitle">Job title *</label>
+                                          <input id="form_jobtitle3" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_company">Organization *</label>
+                                          <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="mat_name">Material name *</label>
+                                          <input id="mat_name" name="Material name" class="form-control" required="required" data-error="Please specify material name.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                          <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div><div class="col-md-12">
+                                        <div class="form-group">
+
+                                          <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
+              zoom: 1.5;
+          "> I have read and agreed to the Matmatch <a href="https://matmatch.com/imprint#tnc-buyers" style="display:inline;color:#337ab7;">Terms and Conditions</a> and <a href="https://matmatch.com/imprint#privacy-policy" style="display:inline;color:#337ab7;">Privacy Policy</a>.
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_3_s">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_jobtitle">Job title *</label>
-                              <input id="form_jobtitle5" type="text" name="Job Title" class="form-control" placeholder="Please enter your Job Title *" required="required" data-error="Valid Job title is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
 
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_company">Organization *</label>
-                              <input id="form_company" type="text" name="Organization" class="form-control" placeholder="Please enter your organization name *" required="required" data-error="Company name is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_need">Please specify your request *</label>
-                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                    <option value="Find unlisted property">Find unlisted property</option>
-                                    <option value="Check listed property">Check listed property</option>
-                                    <option value="Estimate material data">Estimate material data</option>
-                                    <option value="Find equivalent standard">Find equivalent standard</option>
-                                    <option value="Find alternative materials">Find alternative materials</option>
-                                    <option value="Application suitability">Application suitability</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-
-              <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="State all the specificatinos of the supplier you are looking. Country, estimated delivery, material specifications, standards and order quantity." rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div><div class="col-md-12">
-                            <div class="form-group">
-
-                              <input type="checkbox" name="terms" value="Accept" required="required" data-error="Please accept terms and conditions to proced" style="
-  zoom: 1.5;
-"> I have read and agreed to the Matmatch <a href="https://matmatch.com/imprint#tnc-buyers" style="display:inline;color:#337ab7;">Terms and Conditions</a> and <a href="https://matmatch.com/imprint#privacy-policy" style="display:inline;color:#337ab7;">Privacy Policy</a>.
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_5_s">
-                        </div>
-                    </div>
-                </div>
-
-            </form>
+                        </form>
 
             <div id="request_sent_5" style= "display:none;">
                 <div class="row">

@@ -467,10 +467,10 @@ document.getElementById('btn_sup_5_p').addEventListener('click', function(e) {
     e.preventDefault()
     //var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
     //console.log(formData)
-    var style = "width:" + $('#body_sup_3').width().toString() + "px;height:" + $('#body_sup_3').height().toString() + "px;"
-    console.log($('#request_sent_3_p'))
-    $('#request_sent_3_p').attr('style', style);
-    $('#request_sent_3').attr('style', "display:none;");
+    var style = "width:" + $('#body_sup_5').width().toString() + "px;height:" + $('#body_sup_5').height().toString() + "px;"
+    console.log($('#request_sent_5_p'))
+    $('#request_sent_5_p').attr('style', style);
+    $('#request_sent_5').attr('style', "display:none;");
     payment(localStorage.getItem('email'))
 
 })

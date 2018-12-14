@@ -306,7 +306,7 @@
                           </li>
 
                         </ul>
-                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan4_sup" id="btn_sup_5"><span>REQUEST</span></a>
+                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan5_sup" id="btn_sup_5"><span>REQUEST</span></a>
                       </div>
                     </div>
 
@@ -410,7 +410,7 @@
                     <div class="form-group">
                       <input class="form-control edit-form-input" id="pwd" type="password" placeholder="Password">
                     </div><a class="forget-password text-left" id="forgotFormBtn" href="javascript:;">Forget Password?</a>
-                    <button class="btn btn-success btn-xs btn-rounded text-center" type="button">Submit</button>
+                    <button class="btn btn-matmatch btn-md btn-xs btn-rounded text-center" type="button">Submit</button>
                     <div class="account">Don't have an account?<a href="javascript:;" id="signUpModal">Sign Up</a></div>
                   </div>
                 </div>
@@ -428,7 +428,7 @@
                     <div class="form-group">
                       <input class="form-control edit-form-input" id="password" type="password" placeholder="Password">
                     </div>
-                    <button class="btn btn-success btn-xs btn-rounded text-center" type="button">Submit</button>
+                    <button class="btn btn-matmatch btn-md btn-xs btn-rounded text-center" type="button">Submit</button>
                     <div class="account">Already have account<a href="javascript:;" id="formloginModal">Login</a></div>
                   </div>
                 </div>
@@ -439,7 +439,7 @@
                     <div class="form-group">
                       <input class="form-control edit-form-input" id="email-reset" type="text" placeholder="email">
                     </div>
-                    <button class="btn btn-success btn-xs btn-rounded text-center" type="button">Submit</button>
+                    <button class="btn btn-matmatch btn-md btn-xs btn-rounded text-center" type="button">Submit</button>
                     <div class="account"><a href="javascript:;" id="modal-login-btn">Back to Login</a></div>
                   </div>
                 </div>
@@ -460,8 +460,8 @@
 
 
             <form id="contact-form_sup_free" role="form" style="">
-              Material/standard/grade: Indicate if different from current material page (optional)
-  Form: Indicate form (optional; refer to Forms on home page for examples)
+              <p class="form_p ">Material/standard/grade: Indicate if different from current material page (optional)
+  Form: Indicate form (optional; refer to Forms on home page for examples)</p>
               <input  type="hidden" name="plan" value="free-supplier" >
 
 
@@ -534,7 +534,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_free_s">
+                                        <input style="margin: 24px 0px;" type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_free_s">
                                     </div>
                                 </div>
                             </div>
@@ -542,8 +542,12 @@
                         </form>
 
             <div id="request_sent_1" style= "display:none;">
-              Thank you for sending the request
-
+                <div class="row request_s">
+                  <div class="col-md-12 text-center content">
+                      <div class="circle-features2 icon-setup icon-align"></div>
+                      <h3 class="">Thank you for sending the request</h3>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
@@ -559,10 +563,10 @@
           <div class="popup-body" id="body_sup_2" >
 
               <form id="contact-form_sup_2" role="form" style="">
-                Material/standard/grade: Indicate if different from current material page (optional)
+                <p class="form_p ">Material/standard/grade: Indicate if different from current material page (optional)
 Form: Indicate form (optional; refer to Forms on home page for examples)
 Dimensions: Indicate dimensions (optional)
-Other: Preferred origin, compliance with standards, etc. (optional)
+                    Other: Preferred origin, compliance with standards, etc. (optional)</p>
                 <input  type="hidden" name="plan" value="standard-supplier" >
 
                               <div class="messages"></div>
@@ -633,49 +637,35 @@ Other: Preferred origin, compliance with standards, etc. (optional)
                                           </div>
                                       </div>
                                       <div class="col-md-12">
-                                          <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_2_s">
+                                          <input style="margin: 24px 0px;" type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_2_s">
                                       </div>
                                   </div>
                               </div>
 
-                          </form>
-
+                          </form>    
+              
             <div id="request_sent_2" style= "display:none;">
-                <div class="row">
-                  <div class="col-md-12">
-                      Thank you for sending the request 2
+                <div class="row request_s">
+                  <div class="col-md-12 text-center content">
+                      <div class="circle-features2 icon-setup icon-align"></div>
+                      <h3 class="">Thank you for sending the request 2</h3>
+                      <p>You selected the plan X</p>
+                      <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Pay €20" id="btn_sup_2_p" >
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-md-12">
-                      You selected the plan X
-                  </div>
-                </div>
-
-              <div class="row">
-                <div class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Pay €20" id="btn_sup_2_p" >
-                </div>
-            </div>
-
-            </div>
-
+            </div>  
+              
+              
             <div id="request_sent_2_p" style= "display:none;">
-                <div class="row">
-                  <div class="col-md-12">
-                      Awesome you have been selected and got it for free
+                <div class="row request_s">
+                  <div class="col-md-12 text-center content">
+                      <h3 class="">Awesome you have been selected and got it for free</h3>
+                      <p>Wait for our response</p>
+                      <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Close" id="btn_sup_2_p" >
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-md-12">
-                      Wait for our response
-                  </div>
-                </div>
-
-            </div>
-
+            </div>  
+              
             </div>
           </div>
         </div>
@@ -694,12 +684,11 @@ Other: Preferred origin, compliance with standards, etc. (optional)
 
 
             <form id="contact-form_sup_3" role="form" style="">
-              Material/standard/grade: Indicate if different from current material page (optional)<br>
+              <p class="form_p ">Material/standard/grade: Indicate if different from current material page (optional)<br>
   Form: Indicate form (optional; refer to Forms on home page for examples)<br>
   Dimensions: Indicate dimensions (optional)<br>
   Availability and delivery terms: Specify (optional)<br>
-  Other: Preferred origin, compliance with standards, etc. (optional)<br>
-  <br>
+                  Other: Preferred origin, compliance with standards, etc. (optional)</p>
 
               <input  type="hidden" name="plan" value="customized-supplier" >
 
@@ -771,48 +760,34 @@ Other: Preferred origin, compliance with standards, etc. (optional)
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_3_s">
+                                        <input style="margin: 24px 0px;" type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_3_s">
                                     </div>
                                 </div>
                             </div>
 
                         </form>
-
+              
             <div id="request_sent_3" style= "display:none;">
-                <div class="row">
-                  <div class="col-md-12">
-                      Thank you for sending the request 3
+                <div class="row request_s">
+                  <div class="col-md-12 text-center content">
+                      <div class="circle-features2 icon-setup icon-align"></div>
+                      <h3 class="">Thank you for sending the request 3</h3>
+                      <p>You selected the plan X</p>
+                      <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Pay €99" id="btn_sup_5_p" >
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-md-12">
-                      You selected the plan X
-                  </div>
-                </div>
-
-              <div class="row">
-                <div class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Pay €20" id="btn_sup_3_p" >
-                </div>
             </div>
-
-            </div>
-
+              
             <div id="request_sent_3_p" style= "display:none;">
-                <div class="row">
-                  <div class="col-md-12">
-                      Awesome you have been selected and got it for free
+                <div class="row request_s">
+                  <div class="col-md-12 text-center content">
+                      <h3 class="">Awesome you have been selected and got it for free</h3>
+                      <p>Wait for our response</p>
+                      <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Close" id="btn_sup_5_p" >
                   </div>
                 </div>
+            </div>  
 
-                <div class="row">
-                  <div class="col-md-12">
-                      Wait for our response
-                  </div>
-                </div>
-
-            </div>
           </div>
         </div>
       </div>
@@ -829,8 +804,8 @@ Other: Preferred origin, compliance with standards, etc. (optional)
 
 
             <form id="contact-form_sup_4" method="post" role="form">
-              Find value: State property (obligatory) and parameters e.g. temperature (optional)
-  Check value: State property and value (obligatory)  / suggest alternative value and/or reference (optional)
+              <p class="form_p ">Find value: State property (obligatory) and parameters e.g. temperature (optional)
+                  Check value: State property and value (obligatory)  / suggest alternative value and/or reference (optional)</p>
               <form id="contact-form_sup_4" role="form" style="">
                 <input  type="hidden" name="plan" value="free-material" >
 
@@ -905,7 +880,7 @@ Other: Preferred origin, compliance with standards, etc. (optional)
                                           </div>
                                       </div>
                                       <div class="col-md-12">
-                                          <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_4_s">
+                                          <input style="margin: 24px 0px;" type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_4_s">
                                       </div>
                                   </div>
                               </div>
@@ -913,18 +888,13 @@ Other: Preferred origin, compliance with standards, etc. (optional)
                           </form>
 
             <div id="request_sent_4" style= "display:none;">
-                <div class="row">
-                  <div class="col-md-12">
-                      Thank you for sending the request 4
+                <div class="row request_s">
+                  <div class="col-md-12 text-center content">
+                      <div class="circle-features2 icon-setup icon-align"></div>
+                      <h3 class="">Thank you for sending the request 4</h3>
+                      <p>You selected the plan X</p>
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-md-12">
-                      You selected the plan X
-                  </div>
-                </div>
-
             </div>
 
           </div>
@@ -943,11 +913,11 @@ Other: Preferred origin, compliance with standards, etc. (optional)
           <div class="popup-body" id="body_sup_5" >
 
               <form id="contact-form_sup_5" role="form" style="">
-                Find value: State property (mandatory) and parameters e.g. temperature (optional)
+                <p class="form_p ">Find value: State property (mandatory) and parameters e.g. temperature (optional)
     Check value: State property and value (mandatory)  / suggest alternative value and/or reference (optional)
     Find equivalent standard: Indicate country and/or standard organization (mandatory)
     Find alternative material: Indicate required standards and/or propertys and values (mandatory)
-    Check suitability: Specify application (mandatory; refer to Applications on home page for examples)
+                    Check suitability: Specify application (mandatory; refer to Applications on home page for examples)</p>
                 <input  type="hidden" name="plan" value="customized-material" >
 
                 <div class="messages"></div>
@@ -1025,7 +995,7 @@ Other: Preferred origin, compliance with standards, etc. (optional)
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message" id="btn_sup_5_s">
+                            <input style="margin: 24px 0px;" type="submit" class="btn btn-matmatch btn-md btn-send" value="Send message" id="btn_sup_5_s">
                         </div>
                     </div>
                 </div>
@@ -1033,40 +1003,27 @@ Other: Preferred origin, compliance with standards, etc. (optional)
             </form>
 
             <div id="request_sent_5" style= "display:none;">
-                <div class="row">
-                  <div class="col-md-12">
-                      Thank you for sending the request 5
+                <div class="row request_s">
+                  <div class="col-md-12 text-center content">
+                      <div class="circle-features2 icon-setup icon-align"></div>
+                      <h3 class="">Thank you for sending the request 5</h3>
+                      <p>You selected the plan X</p>
+                      <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Pay €20" id="btn_sup_5_p" >
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-md-12">
-                      You selected the plan X
-                  </div>
-                </div>
-
-              <div class="row">
-                <div class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Pay €20" id="btn_sup_5_p" >
-                </div>
             </div>
-
-            </div>
-
+              
             <div id="request_sent_5_p" style= "display:none;">
-                <div class="row">
-                  <div class="col-md-12">
-                      Awesome you have been selected and got it for free
+                <div class="row request_s">
+                  <div class="col-md-12 text-center content">
+                      <h3 class="">Awesome you have been selected and got it for free</h3>
+                      <p>Wait for our response</p>
+                      <input type="submit" class="btn btn-matmatch btn-md btn-send" value="Close" id="btn_sup_5_p" >
                   </div>
                 </div>
+            </div>  
 
-                <div class="row">
-                  <div class="col-md-12">
-                      Wait for our response
-                  </div>
-                </div>
 
-            </div>
           </div>
         </div>
       </div>

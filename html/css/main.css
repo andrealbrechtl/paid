@@ -1143,7 +1143,6 @@ div.menu li.animate {
             color: #918f8f;
             font-size: 15px;
             font-weight: 400;
-            text-transform: capitalize;
             padding-bottom: 15px;
             text-align: center; }
     .pricing-section .content-section .reset, .pricing-section .compare-pricing-plans + .compare-plans .reset {
@@ -1823,6 +1822,35 @@ a {
   font-size: 15px;
   line-height: 1,7;
   margin-bottom: 24px; }
+
+.request_s {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .request_s .content {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+    .request_s .content p {
+      font-size: 18px; }
+    .request_s .content .circle-features2 {
+      margin-bottom: 12px;
+      font-size: 60px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid #24aa65;
+      color: #24aa65;
+      text-align: center;
+      padding-top: 20px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto; }
+    .request_s .content .btn-matmatch {
+      margin: 0px !important; }
 
 /* General Reset Start*/
 html, body {
