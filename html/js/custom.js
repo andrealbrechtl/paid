@@ -360,6 +360,7 @@ document.getElementById('btn_sup_5').addEventListener('click', function(e) {
 //pricing buttons
   $('#contact-form_sup_free').on('submit', function(e) {
   //document.getElementById('btn_sup_free_s').addEventListener('submit', function(e) {
+      gtag('event', 'Send Contact Form', {'event_category': 'Material','event_label': 'paid-free'})
       e.preventDefault()
 
       var formData = $('#contact-form_sup_free').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
@@ -376,6 +377,7 @@ document.getElementById('btn_sup_5').addEventListener('click', function(e) {
 })
 $('#contact-form_sup_2').on('submit', function(e) {
 //document.getElementById('btn_sup_2_s').addEventListener('click', function(e) {
+    gtag('event', 'Send Contact Form', {'event_category': 'Material','event_label': 'paid-plan2'})
 
     var formData = $('#contact-form_sup_2').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
     sendform(formData)
@@ -391,6 +393,7 @@ $('#contact-form_sup_2').on('submit', function(e) {
 })
 $('#contact-form_sup_3').on('submit', function(e) {
 //document.getElementById('btn_sup_3_s').addEventListener('click', function(e) {
+    gtag('event', 'Send Contact Form', {'event_category': 'Material','event_label': 'paid-plan3'})
     e.preventDefault()
     var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
     sendform(formData)
@@ -406,9 +409,10 @@ $('#contact-form_sup_3').on('submit', function(e) {
 })
 
 $('#contact-form_sup_4').on('submit', function(e) {
+  gtag('event', 'Send Contact Form', {'event_category': 'Material','event_label': 'paid-plan4'})
 //document.getElementById('btn_sup_3_s').addEventListener('click', function(e) {
     e.preventDefault()
-    var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
+    var formData = $('#contact-form_sup_4').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
     sendform(formData)
 
     console.log(formData)
@@ -422,6 +426,7 @@ $('#contact-form_sup_4').on('submit', function(e) {
 
 })
 $('#contact-form_sup_5').on('submit', function(e) {
+  gtag('event', 'Send Contact Form', {'event_category': 'Material','event_label': 'paid-plan5'})
 //document.getElementById('btn_sup_3_s').addEventListener('click', function(e) {
     e.preventDefault()
     var formData = $('#contact-form_sup_5').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
@@ -488,35 +493,15 @@ document.getElementById('btn_sup_5_close').addEventListener('click', function(e)
 })
 
 //analytics
-<!-- Global site tag (gtag.js) - Google Analytics -->
 
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-85033665-5');
 
 //tag googletagmanager
-<!-- Google Tag Manager -->
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PV6RPFJ');
-<!-- End Google Tag Manager -->
+
 
 //hotjar
 
 
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:724187,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
 
 
 //intercom
