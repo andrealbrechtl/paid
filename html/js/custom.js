@@ -474,6 +474,18 @@ document.getElementById('btn_sup_5_p').addEventListener('click', function(e) {
     payment(localStorage.getItem('email'))
 
 })
+document.getElementById('btn_sup_2_close').addEventListener('click', function(e) {
+  $('#modal_plan2_sup').modal('toggle');
+
+})
+document.getElementById('btn_sup_3_close').addEventListener('click', function(e) {
+  $('#modal_plan3_sup').modal('toggle');
+
+})
+document.getElementById('btn_sup_5_close').addEventListener('click', function(e) {
+  $('#modal_plan5_sup').modal('toggle');
+
+})
 
 //analytics
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -485,7 +497,14 @@ document.getElementById('btn_sup_5_p').addEventListener('click', function(e) {
 
   gtag('config', 'UA-85033665-5');
 
-
+//tag googletagmanager
+<!-- Google Tag Manager -->
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PV6RPFJ');
+<!-- End Google Tag Manager -->
 
 //hotjar
 
