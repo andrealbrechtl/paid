@@ -64,6 +64,12 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
+    <script>    //show tab function
+        function changetab() {
+        	$('a[href="#tab2default"]').tab('show')
+        }
+        </script>
+
     <div class="blue" id="template"></div>
     <!--START NAVIGATION-->
     <nav class="navbar navbar-default navigation-style navbar-fixed-top">
@@ -87,7 +93,7 @@
                 <h1 class="heading-page">Get help from our materials experts</h1>
                 <p class="sub-content">We can help you find a supplier or provide in-depth knowledge about a specific material.<br> What would you like to do?</p>
                 <a onclick="gtag('event', 'mat-cta', {'event_category': 'paid-test'})" class="btn btn-matmatch btn-lg page-scroll wow " href="#pricing" data-wow-duration="0.8s" data-wow-delay="0.6s"><span>I need a material supplier</span></a>
-                <a onclick="gtag('event', 'sup-cta', {'event_category': 'paid-test'})" class="btn btn-matmatch btn-lg page-scroll wow " href="#pricing" data-wow-duration="0.8s" data-wow-delay="0.6s"><span>I need material data</span></a>
+                <a onclick="gtag('event', 'sup-cta', {'event_category': 'paid-test'});changetab()" class="btn btn-matmatch btn-lg page-scroll wow " href="#pricing" data-wow-duration="0.8s" data-wow-delay="0.6s"><span>I need material data</span></a>
               </div>
               <!--carroussel-->
             </div>
@@ -214,8 +220,8 @@
           <div class="panel-heading">
               <div class="container">
                   <ul class="nav nav-tabs pricing-tabs">
-                      <li class="active"><a href="#tab1default" data-toggle="tab">Find a supplier</a></li>
-                      <li><a href="#tab2default" data-toggle="tab">Find a material</a></li>
+                      <li id="suptab" class="active"><a href="#tab1default" data-toggle="tab">Find a supplier</a></li>
+                      <li id="mattab"><a href="#tab2default" data-toggle="tab">Find a material</a></li>
                   </ul>
               </div>
           </div>
@@ -239,12 +245,11 @@
                           </li>
                           <li><span class="text-important">Form </span>as specified
                           </li>
-                          <li><span class="text-important">One </span>suggestion
-                          </li>
+
                           <li><span class="text-important">Response </span>within 3 working days
                           </li>
                         </ul>
-                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan1_sup" id="btn_sup_free" ><span>REQUEST</span></a>
+                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan1_sup" id="btn_sup_free" onclick="gtag('event', 'btn_sup_free', {'event_category': 'paid-test'})" ><span>REQUEST</span></a>
                       </div>
                     </div>
 
@@ -259,7 +264,7 @@
                         <ul class="content-pricing">
                           <li><span class="text-important">Good </span>material/standard fit
                           </li>
-                          <li><span class="text-important">Two </span>supplier Sugestions
+                          <li><span class="text-important">Two </span>supplier Suggestions
                           </li>
                           <li><span class="text-important">Form and dimension </span>as specified
                           </li>
@@ -268,7 +273,7 @@
                           <li><span class="text-important">Link </span>to material page and supplier website
                           </li>
                         </ul>
-                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan2_sup" id="btn_sup_2"><span>REQUEST</span></a>
+                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan2_sup" id="btn_sup_2" onclick="gtag('event', 'btn_sup_2', {'event_category': 'paid-test'})"><span>REQUEST</span></a>
                       </div>
                     </div>
 
@@ -287,23 +292,23 @@
                           </li>
                           <li><span class="text-important">Form and dimension </span>as specified
                           </li>
-                          <li><span class="text-important">Two </span>working days delivery
+                          <li><span class="text-important">Response </span>within 2 working days
                           </li>
                           <li><span class="text-important">Material delivery </span>availability check
                           </li>
                         <li><span class="text-important">Additional </span>expert support
                         </li>
                         </ul>
-                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan3_sup" id="btn_sup_3"><span>REQUEST</span></a>
+                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan3_sup" id="btn_sup_3" onclick="gtag('event', 'btn_sup_3', {'event_category': 'paid-test'})"><span>REQUEST</span></a>
                       </div>
                     </div>
 
 
                   </div>
-                  <div class="tab-pane fade" id="tab2default" style="display:-webkit-flex;justify-content:center">
+                  <div class="tab-pane fade" id="tab2default">
 
 
-                    <div class="main-container" data-wow-duration="1s">
+                    <div class="main-container over" data-wow-duration="1s">
                       <div class="green-container">
                         <div class="enterprise-container-2 container-1 text-center">
                           <h1 class="heading">Free Assistance</h1>
@@ -320,11 +325,11 @@
                           </li>
 
                         </ul>
-                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan4_sup" id="btn_sup_4"><span>REQUEST</span></a>
+                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan4_sup" id="btn_sup_4" onclick="gtag('event', 'btn_sup_4', {'event_category': 'paid-test'})" ><span>REQUEST</span></a>
                       </div>
                     </div>
 
-                    <div class="main-container" data-wow-duration="1s">
+                    <div class="main-container over" data-wow-duration="1s">
                       <div class="basic-first green-container">
                         <div class="enterprise-container-2 container-1 text-center">
                           <h1 class="heading">Customised Assistance</h1>
@@ -347,7 +352,7 @@
                           </li>
 
                         </ul>
-                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan5_sup" id="btn_sup_5"><span>REQUEST</span></a>
+                        <a class="btn-matmatch btn-md btn" href="#" data-toggle="modal" data-target="#modal_plan5_sup" id="btn_sup_5" onclick="gtag('event', 'btn_sup_5', {'event_category': 'paid-test'})"><span>REQUEST</span></a>
                       </div>
                     </div>
 
@@ -1119,6 +1124,15 @@ For the identification of an equivalent standard, please indicate the country an
   </body>
 
   <style>
+
+@media screen and (min-width: 992px) {
+.over{
+width:35%!important;
+margin:calc(35%/5)!important;
+
+}
+}
+
   body {
   font-family: 'Lato', sans-serif;
 }
