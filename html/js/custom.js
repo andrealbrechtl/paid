@@ -472,10 +472,37 @@ document.getElementById('btn_sup_2_p').addEventListener('click', function(e) {
     //var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
     //console.log(formData)
     var style = "width:" + $('#body_sup_2').width().toString() + "px;height:" + $('#body_sup_2').height().toString() + "px;"
-    console.log($('#request_sent_2_p'))
-    $('#request_sent_2_p').attr('style', style);
-    $('#request_sent_2').attr('style', "display:none;");
-    payment(localStorage.getItem('email'))
+
+    var handler = StripeCheckout.configure({
+      key: 'pk_test_Yt25sNrPyc12fq5FiYUQqtCy',
+      image: 'https://matmatch.com/blog/wp-content/uploads/2019/01/matmatch_logo_stacked.png',
+      locale: 'auto',
+      token: function(token) {
+        token["plan"] = "body_sup_2"
+        token["amount"] = 3900
+        console.log(token)
+        var request = $.ajax({
+                          url: "https://workersapp.herokuapp.com/payment_request",
+                          type: "POST",
+                          data: token,
+                          dataType: "json"
+                          });
+
+        console.log($('#request_sent_2_p'))
+        $('#request_sent_2_p').attr('style', style);
+        $('#request_sent_2').attr('style', "display:none;");
+        payment(localStorage.getItem('email'))
+
+        // You can access the token ID with `token.id`.
+        // Get the token ID to your server-side code for use.
+      }
+    })
+    handler.open({
+      name: 'Matmatch.com',
+      description: 'Customized Sourcing',
+      zipCode: false,
+      amount: 3900
+    });
 
 
 
@@ -486,10 +513,38 @@ document.getElementById('btn_sup_3_p').addEventListener('click', function(e) {
     //var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
     //console.log(formData)
     var style = "width:" + $('#body_sup_3').width().toString() + "px;height:" + $('#body_sup_3').height().toString() + "px;"
-    console.log($('#request_sent_3_p'))
-    $('#request_sent_3_p').attr('style', style);
-    $('#request_sent_3').attr('style', "display:none;");
-    payment(localStorage.getItem('email'))
+
+    var handler = StripeCheckout.configure({
+      key: 'pk_test_Yt25sNrPyc12fq5FiYUQqtCy',
+      image: 'https://matmatch.com/blog/wp-content/uploads/2019/01/matmatch_logo_stacked.png',
+      locale: 'auto',
+      token: function(token) {
+        token["plan"] = "body_sup_3"
+        token["amount"] = 9900
+        console.log(token)
+        var request = $.ajax({
+                          url: "https://workersapp.herokuapp.com/payment_request",
+                          type: "POST",
+                          data: token,
+                          dataType: "json"
+                          });
+
+        console.log($('#request_sent_3_p'))
+        $('#request_sent_3_p').attr('style', style);
+        $('#request_sent_3').attr('style', "display:none;");
+        payment(localStorage.getItem('email'))
+
+        // You can access the token ID with `token.id`.
+        // Get the token ID to your server-side code for use.
+      }
+    })
+    handler.open({
+      name: 'Matmatch.com',
+      description: 'Customized Sourcing',
+      zipCode: false,
+      amount: 9900
+    });
+
 
 })
 
@@ -498,10 +553,37 @@ document.getElementById('btn_sup_5_p').addEventListener('click', function(e) {
     //var formData = $('#contact-form_sup_3').serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});
     //console.log(formData)
     var style = "width:" + $('#body_sup_5').width().toString() + "px;height:" + $('#body_sup_5').height().toString() + "px;"
-    console.log($('#request_sent_5_p'))
-    $('#request_sent_5_p').attr('style', style);
-    $('#request_sent_5').attr('style', "display:none;");
-    payment(localStorage.getItem('email'))
+
+    var handler = StripeCheckout.configure({
+      key: 'pk_test_Yt25sNrPyc12fq5FiYUQqtCy',
+      image: 'https://matmatch.com/blog/wp-content/uploads/2019/01/matmatch_logo_stacked.png',
+      locale: 'auto',
+      token: function(token) {
+        token["plan"] = "body_sup_5"
+        token["amount"] = 2900
+        console.log(token)
+        var request = $.ajax({
+                          url: "https://workersapp.herokuapp.com/payment_request",
+                          type: "POST",
+                          data: token,
+                          dataType: "json"
+                          });
+
+        console.log($('#request_sent_5_p'))
+        $('#request_sent_5_p').attr('style', style);
+        $('#request_sent_5').attr('style', "display:none;");
+        payment(localStorage.getItem('email'))
+
+        // You can access the token ID with `token.id`.
+        // Get the token ID to your server-side code for use.
+      }
+    })
+    handler.open({
+      name: 'Matmatch.com',
+      description: 'Customized Sourcing',
+      zipCode: false,
+      amount: 2900
+    });
 
 })
 document.getElementById('btn_sup_2_close').addEventListener('click', function(e) {
@@ -517,14 +599,34 @@ document.getElementById('btn_sup_5_close').addEventListener('click', function(e)
 
 })
 
-//analytics
+//stripe configure
 
+window.addEventListener('popstate', function() {
+  handler.close();
+});
 
-//tag googletagmanager
+function create_stripe_handler(amount, plan) {
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_7aQd261VcYnzqvyKMq2Vx7o9',
+    image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+    locale: 'auto',
+    token: function(token) {
+      token["plan"] = plan
+      token["amount"] = amount
+      console.log(token)
+      var request = $.ajax({
+                        url: "https://workersapp.herokuapp.com/payment_request",
+                        type: "POST",
+                        data: token,
+                        dataType: "json"
+                        });
 
-
-//hotjar
-
+      return handler
+      // You can access the token ID with `token.id`.
+      // Get the token ID to your server-side code for use.
+    }
+  });
+}
 
 
 
