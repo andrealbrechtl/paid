@@ -1,0 +1,402 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+html, body 
+	width: 100%
+	overflow-x: hidden
+
+.top-header
+	height: 10vh
+	background-color: #526193
+
+.main-header
+	margin-top: -1px
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 91%, 0% 100%)
+	clip-path: polygon(0 0, 100% 0%, 100% 91%, 0% 100%)
+	height: 50vh
+	background-color: $bg
+	display: grid
+	align-content: center
+	position: relative
+
+.logo
+	padding-left: 7vw
+	img
+		max-width: 200px
+
+.header-content
+	text-align: center
+	color: #ffffff
+	margin-top: -120px
+	h1
+		margin: 0
+		font-weight: 300
+		padding: 0 2vw
+	p
+		margin: 0
+		font-weight: 300
+		padding: 0 2vw
+		padding-bottom: 20px
+	.p-1b
+		width: 50%
+		margin: 0 auto
+		padding-bottom: 30px
+
+.lp_hero_image
+	text-align: center
+	position: relative
+	margin: 0 auto
+	margin-top: -130px
+	img
+		width: 50%
+
+.lp_hero_video
+	text-align: center
+	position: relative
+	margin: 0 auto
+	margin-top: -130px
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 10px 30px
+	font-size: 12px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: lighten($accent, 20%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 10%)
+		&::after
+			opacity: .32
+
+.paragraf
+	display: grid
+	grid-template-columns: 1fr 1fr
+	grid-gap: 20px
+	width: 60%
+	margin: 0 auto
+	padding-top: 40px
+	p
+		font-size: 14px
+		opacity: 0.8
+
+.painpoints
+	background-color: $bg
+	color: #ffffff
+	margin-top: 60px
+	margin-bottom: 60px
+
+h2
+	text-align: center
+	font-weight: 300
+	padding-top: 40px
+	padding-bottom: 40px
+	opacity: 0.8
+
+.section-painpoints
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr
+	text-align: center
+	font-weight: 300
+	padding: 0 3vw
+	h2
+		padding: 0
+		opacity: 0.8
+	p
+		margin: 0 auto
+		padding-bottom: 40px
+		opacity: 0.8
+		width: 70%
+	img
+		width: 80px	
+	
+.first-showandtext
+	text-align: left
+	display: grid
+	grid-template-columns: 1fr 1fr
+	margin-bottom: 60px
+	h2
+		font-weight: bold
+		text-align: left
+		margin: 0
+		opacity: 0.8
+	p
+		margin: 0
+		opacity: 0.8
+	.first-showandtext-content
+		margin: 0 auto
+		padding: 0 4vw
+		display: grid
+		align-content: center
+	img
+		width: 100%
+		
+
+.second-showandtext
+	padding-top: 40px
+	padding-bottom: 40px
+	background-color: $bg
+	text-align: left
+	display: grid
+	grid-template-columns: 1fr 1fr
+	color: #ffffff
+	h2
+		font-weight: bold
+		text-align: left
+		margin: 0
+		opacity: 0.8
+	p
+		margin: 0
+		opacity: 0.8
+	.second-showandtext-content
+		margin: 0 auto
+		padding: 0 4vw
+		display: grid
+		align-content: center
+	img
+		width: 100%
+		
+.slider
+	margin-top: 20px
+	text-align: center
+	h2
+		font-weight: bold
+		margin: 0
+		padding-bottom: 25px
+	p
+		width: 540px
+		margin: 0 auto
+		padding-bottom: 40px
+
+
+.owl-carousel
+	.owl-nav
+		button.owl-next
+			width: 45px
+			height: 45px
+			background-color: $accent
+			border-radius: 10em
+			span
+				position: absolute
+				top: -25px
+				left: 17px
+		button.owl-prev
+			width: 45px
+			height: 45px
+			background-color: $accent
+			border-radius: 10em
+			span
+				position: absolute
+				top: -25px
+				right: 17px
+
+.slider-owl
+	.owl-nav
+		font-size: 50px
+		color: #fff
+		.owl-next 
+			outline: none
+			right: 10vw
+			top: 40%
+			position: absolute
+		.owl-prev
+			text-align: left
+			left: 10vw
+			top: 40%
+			position: absolute
+			outline: none
+	.slide
+		img
+			margin: 0 auto
+			width: 50%
+
+
+
+.review-section
+	background-color: $bg
+	text-align: center
+	margin-top: 60px
+	margin-bottom: 60px
+	padding-top: 40px
+	padding-bottom: 40px
+	color: #fff
+	h2
+		font-weight: normal
+	p
+		margin: 0
+
+.reviews
+	.review-text
+		padding-top: 40px
+		padding-bottom: 20px
+		width: 50%
+		margin: 0 auto
+		font-weight: 300
+	.owl-nav
+		font-size: 50px
+		color: #fff
+		.owl-next 
+			outline: none
+			right: 14vw
+			top: 40%
+			position: absolute
+		.owl-prev
+			text-align: left
+			left: 14vw
+			top: 40%
+			position: absolute
+			outline: none
+ .owl-dots
+  width: 100%
+  text-align: center
+  .owl-dot
+   width: 10px
+   height: 10px
+   background-color: #fff
+   opacity: .6
+   border-radius: 10em
+   display: inline-block
+   margin: 6px
+   transition: background-color .5s ease, transform .5s ease
+   outline: none
+   &.active
+    background-color: $accent
+    opacity: 1
+    transform: scale(1.1)
+
+.owl-carousel
+	.review-img
+		text-align: center
+		img
+			height: 100px
+			width: 100px
+			display: initial
+
+.section-brands
+	text-align: center
+	h2
+		padding-bottom: 0
+	p
+		margin: 0 auto
+		width: 40%
+
+.brands
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr
+	margin: 0 auto
+	width: 50%
+	margin-top: 60px
+	img
+		width: 55%
+		margin-bottom: 50px
+
+.brands-item
+	img:nth-child(2)
+		margin-bottom: 60px
+		
+.brands-item2
+	img:nth-child(2)
+		margin-bottom: 70px
+
+.brands-item3
+	img:nth-child(2)
+		width: 45%
+		margin-bottom: 40px
+
+form
+	display: inline-block
+	z-index: 100
+
+.form-item
+	margin-bottom: 25px
+	&:nth-child(1)
+		text-align: left
+		input
+			width: 290px
+			display: inline-block
+			&:nth-child(2)
+				margin-left: 20px
+input, select
+	height: 40px
+	width: 600px
+	border: none
+	outline: none
+	transition: background-color .25s ease
+	border-radius: 5px
+	padding: 20px
+
+.section-form
+	text-align: center
+	color: #000
+	margin-top: 60px
+	padding-top: 40px
+	padding-bottom: 40px
+	background-color: #EEF0F0
+	h2
+		color: #000
+		font-weight: normal
+		padding: 0
+	p
+		padding-bottom: 30px
+		font-size: 21px
+		font-weight: normal
+		margin-bottom: 0
+		font-family: GFSDidot
+		max-width: 600px
+		margin: 0 auto
+		padding: 
+			left: 2vw
+			right: 2vw
+	button
+		margin-top: 20px
+
+.remember
+	width: initial
+	margin-left: -178px
+	height: initial
+
+.selectize-input
+	padding-left: 20px
+	text-align: left
+	max-height: 40px
+	font-size: initial
+	color: initial
+	border: 1px solid #f0e4ca
+	.item
+		display: block
+
+label
+	padding-left: 10px
+
+.paragrafsolo
+	display: block
+	text-align: center
+	width: 40%
+@import "media" // Всегда в конце
