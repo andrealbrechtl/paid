@@ -434,6 +434,7 @@ for (i = 0; i < sURLVariables.length; i++) {
 };
 
 	function sendform(form) {
+    form["gaClientId"] = ga.getAll()[0].get('clientId');
 
 if (getUrlParameter("matid")){
 
